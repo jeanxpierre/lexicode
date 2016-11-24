@@ -9,9 +9,24 @@ namespace latus
 {
     public partial class _default : System.Web.UI.Page
     {
+        List<OverwatchCharacter> ocs = new List<OverwatchCharacter>();
+        string error = string.Empty;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!Page.IsPostBack)
+            {
+                ocs = db.loadCharacters();
+                try
+                {
+                    OverwatchData.DataSource = ocs;
+                    OverwatchData.DataBind();
+                }
+                catch (Exception Ex)
+                {
+                    //Do something!
+                }
+            }
         }
     }
 }
