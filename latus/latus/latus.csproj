@@ -76,6 +76,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="qstyle.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
