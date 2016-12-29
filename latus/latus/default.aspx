@@ -38,28 +38,33 @@
                             <div class="vsaq-body" id="_vsaq_body">
                                 <fieldset class="vsaq-item vsaq-block">
                                     <legend>
-                                        <span class="vsaq-label-text" id="text"> Customer Information</span>
+                                        <span class="vsaq-label-text" id="text">Customer Information</span>
                                         <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
                                     </legend>
 
+                                    <fieldset class="vsaq-item vsaq-block">
+                                        <legend>
+                                            <span class="vsaq-label-text" id="text">Customer Identity</span>
+                                            <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
+                                        </legend>
 
-                                    <div class="vsaq-item" data-vsaq-container-for="customer_name">
-                                        <div class="vsaq-question-title">
-                                            <label class="vsaq-label-text" for="customer_name">
-                                                 Customer Name
-                                            </label>
+                                        <div class="vsaq-item" data-vsaq-container-for="customer_name">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="customer_name">
+                                                    Customer Name
+                                                </label>
+                                            </div>
+                                            <asp:TextBox runat="server" ID="customer_name" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                            <p></p>
                                         </div>
-                                        <asp:TextBox runat="server" ID="customer_name" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
-                                        <p></p>
-                                    </div>
 
-                                    <div class="vsaq-item" data-vsaq-container-for="customer_industry">
-                                        <div class="vsaq-question-title">
-                                            <label class="vsaq-label-text" for="customer_industry">
-                                                 Industry
-                                            </label>
-                                        </div>
-                                        <asp:DropDownList runat="server" ID="customer_industry_dropdown" Height="20px" Width="325px">
+                                        <div class="vsaq-item" data-vsaq-container-for="customer_industry">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="customer_industry">
+                                                    Industry
+                                                </label>
+                                            </div>
+                                            <asp:DropDownList runat="server" ID="customer_industry_dropdown" Height="20px" Width="325px">
                                                 <asp:ListItem Value="Aerospace">Aerospace</asp:ListItem>
                                                 <asp:ListItem Value="Agriculture">Agriculture</asp:ListItem>
                                                 <asp:ListItem Value="Chemical">Chemical</asp:ListItem>
@@ -81,42 +86,42 @@
                                                 <asp:ListItem Value="Water">Water</asp:ListItem>
                                             </asp:DropDownList>
                                             <p></p>
-                                    </div>
-
-                                    <div class="vsaq-item" data-vsaq-container-for="customer_headquarters">
-                                        <div class="vsaq-question-title">
-                                            <label class="vsaq-label-text" for="customer_headquarters">
-                                                 Headquarters
-                                            </label>
                                         </div>
-                                         <asp:TextBox runat="server" ID="customer_headquarters" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
-                                        <p></p>
-                                    </div>
 
-                                    <div class="vsaq-item" data-vsaq-container-for="customer_geography">
-                                        <div class="vsaq-question-title">
-                                            <label class="vsaq-label-text" for="customer_geography">
-                                                 Geography
-                                            </label>
+                                        <div class="vsaq-item" data-vsaq-container-for="customer_headquarters">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="customer_headquarters">
+                                                    Headquarters
+                                                </label>
+                                            </div>
+                                            <asp:TextBox runat="server" ID="customer_headquarters" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                            <p></p>
                                         </div>
-                                        <asp:DropDownList runat="server" ID="customer_geography_dropdown" Height="20px" Width="325px">
+
+                                        <div class="vsaq-item" data-vsaq-container-for="customer_geography">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="customer_geography">
+                                                    Geography
+                                                </label>
+                                            </div>
+                                            <asp:DropDownList runat="server" ID="customer_geography_dropdown" Height="20px" Width="325px">
                                                 <asp:ListItem Value="Asia-Pacific North (APAC)">Asia-Pacific North (APAC)</asp:ListItem>
                                                 <asp:ListItem Value="Australia and New Zeakand (ANZ)">Australia and New Zeakand (ANZ)</asp:ListItem>
                                                 <asp:ListItem Value="Central and Eastern Europe, Middle East and Africa (CEMA)">Central and Eastern Europe, Middle East and Africa (CEMA)</asp:ListItem>
                                                 <asp:ListItem Value="Germany, Austria and Switzerland (DOS)">Germany, Austria and Switzerland (DOS)</asp:ListItem>
                                                 <asp:ListItem Value="Europe, the Middle East and Africa (EMEA)">Europe, the Middle East and Africa (EMEA)</asp:ListItem>
                                                 <asp:ListItem Value="North American Region, Canada, US, and Mexico (NA/NORAM)">North American Region, Canada, US, and Mexico (NA/NORAM)</asp:ListItem>
-                                        </asp:DropDownList>
-                                        <p></p>
-                                    </div>
-
-                                    <div class="vsaq-item" data-vsaq-container-for="customer_number_employees">
-                                        <div class="vsaq-question-title">
-                                            <label class="vsaq-label-text" for="customer_number_employees">
-                                                 Number of Employees
-                                            </label>
+                                            </asp:DropDownList>
+                                            <p></p>
                                         </div>
-                                        <asp:DropDownList runat="server" ID="customer_number_employees_dropdown" Height="20px" Width="325px">
+
+                                        <div class="vsaq-item" data-vsaq-container-for="customer_number_employees">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="customer_number_employees">
+                                                    Number of Employees
+                                                </label>
+                                            </div>
+                                            <asp:DropDownList runat="server" ID="customer_number_employees_dropdown" Height="20px" Width="325px">
                                                 <asp:ListItem Value="1-49">1-49 Small Business</asp:ListItem>
                                                 <asp:ListItem Value="50-249">50-249 Medium Business</asp:ListItem>
                                                 <asp:ListItem Value="250-999">250-999 Medium Enterprise</asp:ListItem>
@@ -124,41 +129,41 @@
                                                 <asp:ListItem Value="5,000-19,999">5,000-19,999 Large Enterprise</asp:ListItem>
                                                 <asp:ListItem Value="20,000+">20,000+ Large Enterprise</asp:ListItem>
                                             </asp:DropDownList>
-                                        <p></p>
-                                    </div>
+                                            <p></p>
+                                        </div>
 
-                                    <div class="vsaq-item" data-vsaq-container-for="customer_number_employee_endpoints">
-                                        <div class="vsaq-question-title">
-                                            <label class="vsaq-label-text" for="customer_number_employee_endpoints">
-                                                 Number of Employee Endpoints
-                                            </label>
+                                        <div class="vsaq-item" data-vsaq-container-for="customer_number_employee_endpoints">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="customer_number_employee_endpoints">
+                                                    Number of Employee Endpoints
+                                                </label>
+                                            </div>
+                                            <asp:TextBox runat="server" ID="customer_number_employee_endpoints" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="customer_number_employee_endpoints_desc">
+                                                    Please describe the estimates of OS versions in use
+                                                </label>
+                                            </div>
+                                            <input class="vsaq-line" id="customer_number_employee_endpoints_desc" />
+                                            <p></p>
                                         </div>
-                                        <asp:TextBox runat="server" ID="customer_number_employee_endpoints" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
-                                        <div class="vsaq-question-title">
-                                            <label class="vsaq-label-text" for="customer_number_employee_endpoints_desc">
-                                                 Please describe the estimates of OS versions in use
-                                            </label>
-                                        </div>
-                                        <input class="vsaq-line" id="customer_number_employee_endpoints_desc" />
-                                        <p></p>
-                                    </div>
 
-                                    <div class="vsaq-item" data-vsaq-container-for="customer_number_server_endpoints">
-                                        <div class="vsaq-question-title">
-                                            <label class="vsaq-label-text" for="customer_number_server_endpoints">
-                                                 Number of Server Endpoints
-                                            </label>
+                                        <div class="vsaq-item" data-vsaq-container-for="customer_number_server_endpoints">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="customer_number_server_endpoints">
+                                                    Number of Server Endpoints
+                                                </label>
+                                            </div>
+                                            <asp:TextBox runat="server" ID="customer_number_server_endpoints" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="customer_number_server_endpoints_desc">
+                                                    Please describe the estimates of OS versions in use
+                                                </label>
+                                            </div>
+                                            <input class="vsaq-line" id="customer_number_server_endpoints_desc" />
+                                            <p></p>
                                         </div>
-                                        <asp:TextBox runat="server" ID="customer_number_server_endpoints" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
-                                        <div class="vsaq-question-title">
-                                            <label class="vsaq-label-text" for="customer_number_server_endpoints_desc">
-                                                Please describe the estimates of OS versions in use
-                                            </label>
-                                        </div>
-                                        <input class="vsaq-line" id="customer_number_server_endpoints_desc" />
-                                        <p></p>
-                                    </div>
-
+                                    </fieldset>
                                 </fieldset>
                             </div>
                         </form>
