@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="latus.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CustInformation.aspx.cs" Inherits="latus._default" %>
 
 <!DOCTYPE html>
 
@@ -132,6 +132,7 @@
                                             <p></p>
                                         </div>
                                     </fieldset>
+                                    <asp:Button ID="BtnQuest1" Text="Submit" runat="server"  />
                                 </fieldset>
                             </div>
                         </form>

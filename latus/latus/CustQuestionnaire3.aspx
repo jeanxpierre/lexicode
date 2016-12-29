@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="latus.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CustQuestionnaire3.aspx.cs" Inherits="latus.CustQuestionnaire3" %>
 
 <!DOCTYPE html>
 

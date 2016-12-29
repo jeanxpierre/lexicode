@@ -66,7 +66,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="default.aspx" />
+    <Content Include="CustQuestionnaire1.aspx" />
+    <Content Include="CustQuestionnaire2.aspx" />
+    <Content Include="CustQuestionnaire3.aspx" />
+    <Content Include="CustInformation.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="maia.css" />
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\latus=web.pubxml" />
@@ -79,26 +83,62 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="qstyle.css" />
-    <Content Include="testpage.aspx" />
+    <Content Include="SolutionInformation.aspx" />
+    <Content Include="VendorInformation.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="default.aspx.cs">
-      <DependentUpon>default.aspx</DependentUpon>
+    <Compile Include="CustQuestionnaire1.aspx.cs">
+      <DependentUpon>CustQuestionnaire1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="default.aspx.designer.cs">
-      <DependentUpon>default.aspx</DependentUpon>
+    <Compile Include="CustQuestionnaire1.aspx.designer.cs">
+      <DependentUpon>CustQuestionnaire1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustQuestionnaire2.aspx.cs">
+      <DependentUpon>CustQuestionnaire2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustQuestionnaire2.aspx.designer.cs">
+      <DependentUpon>CustQuestionnaire2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustQuestionnaire3.aspx.cs">
+      <DependentUpon>CustQuestionnaire3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustQuestionnaire3.aspx.designer.cs">
+      <DependentUpon>CustQuestionnaire3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustInformation.aspx.cs">
+      <DependentUpon>CustInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustInformation.aspx.designer.cs">
+      <DependentUpon>CustInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="ds.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="qry.cs" />
-    <Compile Include="testpage.aspx.cs">
-      <DependentUpon>testpage.aspx</DependentUpon>
+    <Compile Include="SolutionInformation.aspx.cs">
+      <DependentUpon>SolutionInformation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="testpage.aspx.designer.cs">
-      <DependentUpon>testpage.aspx</DependentUpon>
+    <Compile Include="SolutionInformation.aspx.designer.cs">
+      <DependentUpon>SolutionInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VendorInformation.aspx.cs">
+      <DependentUpon>VendorInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VendorInformation.aspx.designer.cs">
+      <DependentUpon>VendorInformation.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>

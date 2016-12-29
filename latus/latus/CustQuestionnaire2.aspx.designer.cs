@@ -10,7 +10,7 @@
 namespace latus {
     
     
-    public partial class Default {
+    public partial class CustQuestionnaire2 {
         
         /// <summary>
         /// form1 control.

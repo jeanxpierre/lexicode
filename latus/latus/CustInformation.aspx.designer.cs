@@ -10,7 +10,7 @@
 namespace latus {
     
     
-    public partial class Default {
+    public partial class _default {
         
         /// <summary>
         /// form1 control.
@@ -65,5 +65,14 @@ namespace latus {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList customer_number_employees_dropdown;
+        
+        /// <summary>
+        /// BtnQuest1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnQuest1;
     }
 }
