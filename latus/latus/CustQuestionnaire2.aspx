@@ -38,100 +38,544 @@
                             <div class="vsaq-body" id="_vsaq_body">
                                 <fieldset class="vsaq-item vsaq-block">
                                     <legend>
-                                        <span class="vsaq-label-text" id="text">Customer Information</span>
+                                        <span class="vsaq-label-text" id="text1">Customer Questionnaire Part 2</span>
                                         <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
                                     </legend>
 
                                     <fieldset class="vsaq-item vsaq-block">
                                         <legend>
-                                            <span class="vsaq-label-text" id="text">Customer Identity</span>
+                                            <span class="vsaq-label-text" id="text4">Malware-related Technology Controls</span>
+                                            <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
+                                        </legend>
+                                        <!-- Instruction: Identify Customer Importance 1-10 (10 = Most Important) -->
+                                        <!-- Description: What malware controls are currently employed in your environment and how would you rate their effectiveness? -->
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Hardened gold images for servers and desktops
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList1" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Next-Generation Firewall with Layer 7 Application blocking 
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList9" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Anti-Spam systems with malware detection integration
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList12" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Anti-Virus agents on endpoints
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList13" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Anti-Malware agents on endpoints
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList14" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Outbound URL Filtering
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList15" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Sandbox to check attachments
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList16" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Intrusion Detection or Intrusion Prevention systems
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList17" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    SSL Inspection or SSL Proxy
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList18" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Network Access Control to enforce endpoint policies
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList19" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    USB device enforcement
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList20" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Endpoint Investigation tools
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList21" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Network/User Behavior Analysis System
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList22" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Honey pot, Honey net, or tarpit technology
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList23" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Other
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:TextBox runat="server" ID="TextBox11" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+
+                                    <fieldset class="vsaq-item vsaq-block">
+                                        <legend>
+                                            <span class="vsaq-label-text" id="text2">Malware-related Proecesses</span>
+                                            <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
+                                        </legend>
+                                        <!-- Instruction: Identify Customer Importance 1-10 (10 = Most Important) -->
+                                        <!-- Description: What malware controls are currently employed in your environment? -->
+                                        
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Policy to establish malware controls and report suspected malware infections 
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioBtn1" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    User Awareness and Education
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList2" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Admin privileges removed for employee endpoints
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList3" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Endpoint OS and 3rd party Application Patching 
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList4" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Malware Incident Response Process
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList5" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Vulnerability Scanning 
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList6" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Investigation and Forensics team to perform root-cause analysis
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList7" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Malware hunting for Indicators of Attack or Compromise
+                                                </label>
+                                                <div class="vsaq-radio-item">
+                                                    <asp:RadioButtonList ID="RadioButtonList8" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text" for="use_case">
+                                                    Other
+                                                </label>
+                                                <asp:TextBox runat="server" ID="TextBox9" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+
+                                    <fieldset class="vsaq-item vsaq-block">
+                                        <legend>
+                                            <span class="vsaq-label-text" id="text3">Usability Requirements</span>
                                             <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
                                         </legend>
 
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_name">
-                                            <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_name">
-                                                    Customer Name
-                                                </label>
+                                        <!-- Question Category (3rd Nested) should be more of a title or header than a legend -->
+                                        <div class="">
+                                            <label class="table-header" for="title">
+                                                    Tamper-Resistant
+                                            </label>
+                                            <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                                <div class="vsaq-question-title">
+                                                    <label class="vsaq-label-text" for="use_case">
+                                                        Do you want the agent to be resistent to unauthorized end-user disabling or configuration changes?
+                                                    </label>
+                                                    <div class="vsaq-radio-item">
+                                                        <asp:RadioButtonList ID="RadioButtonList10" RepeatDirection="Horizontal" runat="server">
+                                                            <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                            <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        </asp:RadioButtonList>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <asp:TextBox runat="server" ID="customer_name" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
-                                            <p></p>
                                         </div>
 
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_industry">
-                                            <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_industry">
-                                                    Industry
-                                                </label>
+                                         <div class="">
+                                            <label class="table-header" for="title">
+                                                    Low User Impact
+                                            </label>
+                                            <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                                <div class="vsaq-question-title">
+                                                    <label class="vsaq-label-text" for="use_case">
+                                                        What user impacts are you trying to avoid? (CPU load, UI delay, etc.)
+                                                    </label>
+                                                    <asp:TextBox runat="server" ID="customer_headquarters" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                                </div>
                                             </div>
-                                            <asp:DropDownList runat="server" ID="customer_industry_dropdown" Height="20px" Width="325px">
-                                                <asp:ListItem Value="Aerospace">Aerospace</asp:ListItem>
-                                                <asp:ListItem Value="Agriculture">Agriculture</asp:ListItem>
-                                                <asp:ListItem Value="Chemical">Chemical</asp:ListItem>
-                                                <asp:ListItem Value="Computer">Computer</asp:ListItem>
-                                                <asp:ListItem Value="Construction">Construction</asp:ListItem>
-                                                <asp:ListItem Value="Defense">Defense</asp:ListItem>
-                                                <asp:ListItem Value="Education">Education</asp:ListItem>
-                                                <asp:ListItem Value="Energy">Energy</asp:ListItem>
-                                                <asp:ListItem Value="Entertainment">Entertainment</asp:ListItem>
-                                                <asp:ListItem Value="Financial Services">Financial Services</asp:ListItem>
-                                                <asp:ListItem Value="Food">Food</asp:ListItem>
-                                                <asp:ListItem Value="Health Care">Health Care</asp:ListItem>
-                                                <asp:ListItem Value="Hospitality">Hospitality</asp:ListItem>
-                                                <asp:ListItem Value="Information">Information</asp:ListItem>
-                                                <asp:ListItem Value="Manufacturing">Manufacturing</asp:ListItem>
-                                                <asp:ListItem Value="Mass Media">Mass Media</asp:ListItem>
-                                                <asp:ListItem Value="Telecommunications">Telecommunications</asp:ListItem>
-                                                <asp:ListItem Value="Transport">Transport</asp:ListItem>
-                                                <asp:ListItem Value="Water">Water</asp:ListItem>
-                                            </asp:DropDownList>
-                                            <p></p>
                                         </div>
 
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_headquarters">
-                                            <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_headquarters">
-                                                    Headquarters
-                                                </label>
+                                        <div class="">
+                                            <label class="table-header" for="title">
+                                                    Easy to use (for end users)
+                                            </label>
+                                            <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                                <div class="vsaq-question-title">
+                                                    <label class="vsaq-label-text" for="use_case">
+                                                        What would make it easiest to use? (Invisible to users, simple options, etc.)
+                                                    </label>
+                                                    <asp:TextBox runat="server" ID="TextBox1" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                                </div>
                                             </div>
-                                            <asp:TextBox runat="server" ID="customer_headquarters" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
-                                            <p></p>
                                         </div>
 
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_geography">
-                                            <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_geography">
-                                                    Geography
-                                                </label>
+                                        <div class="">
+                                            <label class="table-header" for="title">
+                                                    Easy to manage (for administrators)
+                                            </label>
+                                            <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                                <div class="vsaq-question-title">
+                                                    <label class="vsaq-label-text" for="use_case">
+                                                        What would make it easiest to manage? (UI, dashboard, risk prioritization, etc.)
+                                                    </label>
+                                                    <asp:TextBox runat="server" ID="TextBox2" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                                </div>
                                             </div>
-                                            <asp:DropDownList runat="server" ID="customer_geography_dropdown" Height="20px" Width="325px">
-                                                <asp:ListItem Value="Asia-Pacific North (APAC)">Asia-Pacific North (APAC)</asp:ListItem>
-                                                <asp:ListItem Value="Australia and New Zeakand (ANZ)">Australia and New Zeakand (ANZ)</asp:ListItem>
-                                                <asp:ListItem Value="Central and Eastern Europe, Middle East and Africa (CEMA)">Central and Eastern Europe, Middle East and Africa (CEMA)</asp:ListItem>
-                                                <asp:ListItem Value="Germany, Austria and Switzerland (DOS)">Germany, Austria and Switzerland (DOS)</asp:ListItem>
-                                                <asp:ListItem Value="Europe, the Middle East and Africa (EMEA)">Europe, the Middle East and Africa (EMEA)</asp:ListItem>
-                                                <asp:ListItem Value="North American Region, Canada, US, and Mexico (NA/NORAM)">North American Region, Canada, US, and Mexico (NA/NORAM)</asp:ListItem>
-                                            </asp:DropDownList>
-                                            <p></p>
                                         </div>
 
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_number_employees">
-                                            <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_number_employees">
-                                                    Number of Employees
-                                                </label>
+                                        <div class="">
+                                            <label class="table-header" for="title">
+                                                    Customer Whitelist/Blacklist 
+                                            </label>
+                                            <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                                <div class="vsaq-question-title">
+                                                    <label class="vsaq-label-text" for="use_case">
+                                                        Do you want the ability to permit or exclude specific apps, folders, or certificates?
+                                                    </label>
+                                                     <div class="vsaq-radio-item">
+                                                        <asp:RadioButtonList ID="RadioButtonList11" RepeatDirection="Horizontal" runat="server">
+                                                            <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
+                                                            <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        </asp:RadioButtonList>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <asp:DropDownList runat="server" ID="customer_number_employees_dropdown" Height="20px" Width="325px">
-                                                <asp:ListItem Value="1-49">1-49 Small Business</asp:ListItem>
-                                                <asp:ListItem Value="50-249">50-249 Medium Business</asp:ListItem>
-                                                <asp:ListItem Value="250-999">250-999 Medium Enterprise</asp:ListItem>
-                                                <asp:ListItem Value="1,000-4,999">1,000-4,999 Large Enterprise</asp:ListItem>
-                                                <asp:ListItem Value="5,000-19,999">5,000-19,999 Large Enterprise</asp:ListItem>
-                                                <asp:ListItem Value="20,000+">20,000+ Large Enterprise</asp:ListItem>
-                                            </asp:DropDownList>
-                                            <p></p>
                                         </div>
+
+                                        <div class="">
+                                            <label class="table-header" for="title">
+                                                    Reporting
+                                            </label>
+                                            <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                                <div class="vsaq-question-title">
+                                                    <label class="vsaq-label-text" for="use_case">
+                                                        What report formats would be preferred? (PDF, CSV, etc.)
+                                                    </label>
+                                                    <asp:TextBox runat="server" ID="TextBox4" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="">
+                                            <label class="table-header" for="title">
+                                                    Web-based management console
+                                            </label>
+                                            <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                                <div class="vsaq-question-title">
+                                                    <label class="vsaq-label-text" for="use_case">
+                                                        Do you prefer external cloud-based or on-premise management?
+                                                    </label>
+                                                    <asp:TextBox runat="server" ID="TextBox5" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="">
+                                            <label class="table-header" for="title">
+                                                    Flexible data storage
+                                            </label>
+                                            <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                                <div class="vsaq-question-title">
+                                                    <label class="vsaq-label-text" for="use_case">
+                                                        Do you prefer external cloud-based or on-premise data storage?
+                                                    </label>
+                                                    <asp:TextBox runat="server" ID="TextBox6" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="">
+                                            <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                                <div class="vsaq-question-title">
+                                                    <label class="vsaq-label-text" for="use_case">
+                                                        Off-Coprorate network protection
+                                                    </label>
+                                                    <asp:TextBox runat="server" ID="TextBox3" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="">
+                                            <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                                <div class="vsaq-question-title">
+                                                    <label class="vsaq-label-text" for="use_case">
+                                                        Off-line protection (no internet)
+                                                    </label>
+                                                    <asp:TextBox runat="server" ID="TextBox7" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="">
+                                            <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                                <div class="vsaq-question-title">
+                                                    <label class="vsaq-label-text" for="use_case">
+                                                        Other
+                                                    </label>
+                                                    <asp:TextBox runat="server" ID="TextBox8" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </fieldset>
+
                                 </fieldset>
                             </div>
                         </form>

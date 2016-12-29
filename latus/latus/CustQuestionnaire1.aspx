@@ -43,13 +43,13 @@
                             <div class="vsaq-body" id="_vsaq_body">
                                 <fieldset class="vsaq-item vsaq-block">
                                     <legend>
-                                        <span class="vsaq-label-text" id="text">Customer Questionnaire Part 1</span>
+                                        <span class="vsaq-label-text" id="text1">Customer Questionnaire Part 1</span>
                                         <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
                                     </legend>
 
                                     <fieldset class="vsaq-item vsaq-block">
                                         <legend>
-                                            <span class="vsaq-label-text" id="text">Problem and Goal Information</span>
+                                            <span class="vsaq-label-text" id="text2">Problem and Goal Information</span>
                                             <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
                                         </legend>
 
@@ -128,7 +128,7 @@
 
                                     <fieldset class="vsaq-item vsaq-block">
                                         <legend>
-                                            <span class="vsaq-label-text" id="text2">Business Drivers</span>
+                                            <span class="vsaq-label-text" id="text3">Business Drivers</span>
                                             <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
                                         </legend>
 
@@ -191,7 +191,7 @@
 
                                     <fieldset class="vsaq-item vsaq-block">
                                         <legend>
-                                            <span class="vsaq-label-text" id="text3">IT Environment in Scope</span>
+                                            <span class="vsaq-label-text" id="text4">IT Environment in Scope</span>
                                             <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
                                         </legend>
 
@@ -569,7 +569,7 @@
 
                                     <fieldset class="vsaq-item vsaq-block">
                                         <legend>
-                                            <span class="vsaq-label-text" id="text4">Threat Vectors in Scope</span>
+                                            <span class="vsaq-label-text" id="text5">Threat Vectors in Scope</span>
                                             <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
                                         </legend>
 
