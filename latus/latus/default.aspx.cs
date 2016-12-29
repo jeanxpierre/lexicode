@@ -9,24 +9,34 @@ namespace latus
 {
     public partial class _default : System.Web.UI.Page
     {
-        List<OverwatchCharacter> ocs = new List<OverwatchCharacter>();
+        //List<OverwatchCharacter> ocs = new List<OverwatchCharacter>();
         string error = string.Empty;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
             {
-                ocs = db.loadCharacters();
+                //ocs = db.loadCharacters();
                 try
                 {
-                    OverwatchData.DataSource = ocs;
-                    OverwatchData.DataBind();
+                    //OverwatchData.DataSource = ocs;
+                    //OverwatchData.DataBind();
                 }
                 catch (Exception Ex)
                 {
                     //Do something!
                 }
             }
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void customername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
