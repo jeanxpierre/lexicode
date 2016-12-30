@@ -132,7 +132,7 @@
                                             <p></p>
                                         </div>
                                     </fieldset>
-                                    <asp:Button ID="BtnQuest1" Text="Submit" runat="server"  />
+                                    <asp:Button ID="BtnQuest1" Text="Submit" runat="server" OnClick="BtnQuest1_Click"  />
                                 </fieldset>
                             </div>
                         </form>

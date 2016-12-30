@@ -9,7 +9,7 @@ namespace latus
 {
     public partial class _default : System.Web.UI.Page
     {
-        //List<OverwatchCharacter> ocs = new List<OverwatchCharacter>();
+        
         string error = string.Empty;
 
         protected void Page_Load(object sender, EventArgs e)
@@ -19,8 +19,7 @@ namespace latus
                 //ocs = db.loadCharacters();
                 try
                 {
-                    //OverwatchData.DataSource = ocs;
-                    //OverwatchData.DataBind();
+                    
                 }
                 catch (Exception Ex)
                 {
@@ -35,6 +34,11 @@ namespace latus
         }
 
         protected void customername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void BtnQuest1_Click(object sender, EventArgs e)
         {
 
         }
