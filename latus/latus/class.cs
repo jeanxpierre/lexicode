@@ -5,21 +5,30 @@ using System.Web;
 
 namespace latus
 {
-    public class OverwatchCharacter
+    public class CustomerInfo
     {
-        public int CharacterId { get; set; }
-        public string CharacterName { get; set; }
-        public string CharacterType { get; set; }
-        public string CharacterColor { get; set; }
+        public Guid CustomerId { get; set; }
+        public string CustomerName { get; set; }
+        public int IndustryId { get; set; }
+        public string Headquarters { get; set; }
+        public int GeographyId { get; set; }
+        public int NumEmployeesId { get; set; }
 
-        public OverwatchCharacter(string CharacterId, string CharacterName, string CharacterType, string CharacterColor)
+        public CustomerInfo(string CustomerName, string IndustryId, string Headquarters, string GeographyId, string NumEmployeesId)
         {
-            int temp = 0;
-            int.TryParse(CharacterId, out temp);
-            this.CharacterId = temp;
-            this.CharacterName = CharacterName;
-            this.CharacterType = CharacterType;
-            this.CharacterColor = CharacterColor;
+            int IndustryIdTemp = 0;
+            int GeographyIdTemp = 0;
+            int NumEmployeesIdTemp = 0;
+
+            this.CustomerId = Guid.NewGuid();
+            this.CustomerName = CustomerName;
+            int.TryParse(IndustryId, out IndustryIdTemp);
+            this.IndustryId = IndustryIdTemp;
+            this.Headquarters = Headquarters;
+            int.TryParse(GeographyId, out GeographyIdTemp);
+            this.GeographyId = GeographyIdTemp;
+            int.TryParse(NumEmployeesId, out NumEmployeesIdTemp);
+            this.NumEmployeesId = NumEmployeesIdTemp;
         }
     }
 

@@ -38,101 +38,67 @@
                             <div class="vsaq-body" id="_vsaq_body">
                                 <fieldset class="vsaq-item vsaq-block">
                                     <legend>
-                                        <span class="vsaq-label-text" id="text">Customer Information</span>
+                                        <span class="vsaq-label-text">Customer Information</span>
                                         <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
                                     </legend>
 
                                     <fieldset class="vsaq-item vsaq-block">
                                         <legend>
-                                            <span class="vsaq-label-text" id="text">Customer Identity</span>
+                                            <span class="vsaq-label-text">Customer Identity</span>
                                             <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
                                         </legend>
 
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_name">
+                                        <div class="vsaq-item" data-vsaq-container-for="CustomerName">
                                             <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_name">
+                                                <label class="vsaq-label-text" for="CustomerName">
                                                     Customer Name
                                                 </label>
                                             </div>
-                                            <asp:TextBox runat="server" ID="customer_name" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                            <asp:TextBox runat="server" ID="CustomerNameTextBox" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
                                             <p></p>
                                         </div>
 
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_industry">
+                                        <div class="vsaq-item" data-vsaq-container-for="CustomerIndustry">
                                             <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_industry">
+                                                <label class="vsaq-label-text" for="CustomerIndustry">
                                                     Industry
                                                 </label>
                                             </div>
-                                            <asp:DropDownList runat="server" ID="customer_industry_dropdown" Height="20px" Width="325px">
-                                                <asp:ListItem Value="Aerospace">Aerospace</asp:ListItem>
-                                                <asp:ListItem Value="Agriculture">Agriculture</asp:ListItem>
-                                                <asp:ListItem Value="Chemical">Chemical</asp:ListItem>
-                                                <asp:ListItem Value="Computer">Computer</asp:ListItem>
-                                                <asp:ListItem Value="Construction">Construction</asp:ListItem>
-                                                <asp:ListItem Value="Defense">Defense</asp:ListItem>
-                                                <asp:ListItem Value="Education">Education</asp:ListItem>
-                                                <asp:ListItem Value="Energy">Energy</asp:ListItem>
-                                                <asp:ListItem Value="Entertainment">Entertainment</asp:ListItem>
-                                                <asp:ListItem Value="Financial Services">Financial Services</asp:ListItem>
-                                                <asp:ListItem Value="Food">Food</asp:ListItem>
-                                                <asp:ListItem Value="Health Care">Health Care</asp:ListItem>
-                                                <asp:ListItem Value="Hospitality">Hospitality</asp:ListItem>
-                                                <asp:ListItem Value="Information">Information</asp:ListItem>
-                                                <asp:ListItem Value="Manufacturing">Manufacturing</asp:ListItem>
-                                                <asp:ListItem Value="Mass Media">Mass Media</asp:ListItem>
-                                                <asp:ListItem Value="Telecommunications">Telecommunications</asp:ListItem>
-                                                <asp:ListItem Value="Transport">Transport</asp:ListItem>
-                                                <asp:ListItem Value="Water">Water</asp:ListItem>
-                                            </asp:DropDownList>
+                                            <asp:DropDownList runat="server" ID="CustomerIndustryDropdown" Height="20px" Width="325px"></asp:DropDownList>
                                             <p></p>
                                         </div>
 
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_headquarters">
+                                        <div class="vsaq-item" data-vsaq-container-for="CustomerHeadquarters">
                                             <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_headquarters">
+                                                <label class="vsaq-label-text" for="CustomerHeadquarters">
                                                     Headquarters
                                                 </label>
                                             </div>
-                                            <asp:TextBox runat="server" ID="customer_headquarters" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                            <asp:TextBox runat="server" ID="CustomerHeadquartersTextBox" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
                                             <p></p>
                                         </div>
 
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_geography">
+                                        <div class="vsaq-item" data-vsaq-container-for="CustomerGeography">
                                             <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_geography">
+                                                <label class="vsaq-label-text" for="CustomerGeography">
                                                     Geography
                                                 </label>
                                             </div>
-                                            <asp:DropDownList runat="server" ID="customer_geography_dropdown" Height="20px" Width="325px">
-                                                <asp:ListItem Value="Asia-Pacific North (APAC)">Asia-Pacific North (APAC)</asp:ListItem>
-                                                <asp:ListItem Value="Australia and New Zeakand (ANZ)">Australia and New Zeakand (ANZ)</asp:ListItem>
-                                                <asp:ListItem Value="Central and Eastern Europe, Middle East and Africa (CEMA)">Central and Eastern Europe, Middle East and Africa (CEMA)</asp:ListItem>
-                                                <asp:ListItem Value="Germany, Austria and Switzerland (DOS)">Germany, Austria and Switzerland (DOS)</asp:ListItem>
-                                                <asp:ListItem Value="Europe, the Middle East and Africa (EMEA)">Europe, the Middle East and Africa (EMEA)</asp:ListItem>
-                                                <asp:ListItem Value="North American Region, Canada, US, and Mexico (NA/NORAM)">North American Region, Canada, US, and Mexico (NA/NORAM)</asp:ListItem>
-                                            </asp:DropDownList>
+                                            <asp:DropDownList runat="server" ID="CustomerGeographyDropdown" Height="20px" Width="325px"></asp:DropDownList>
                                             <p></p>
                                         </div>
 
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_number_employees">
+                                        <div class="vsaq-item" data-vsaq-container-for="CupstomerNumEmployees">
                                             <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_number_employees">
+                                                <label class="vsaq-label-text" for="CustomerNumEmployees">
                                                     Number of Employees
                                                 </label>
                                             </div>
-                                            <asp:DropDownList runat="server" ID="customer_number_employees_dropdown" Height="20px" Width="325px">
-                                                <asp:ListItem Value="1-49">1-49 Small Business</asp:ListItem>
-                                                <asp:ListItem Value="50-249">50-249 Medium Business</asp:ListItem>
-                                                <asp:ListItem Value="250-999">250-999 Medium Enterprise</asp:ListItem>
-                                                <asp:ListItem Value="1,000-4,999">1,000-4,999 Large Enterprise</asp:ListItem>
-                                                <asp:ListItem Value="5,000-19,999">5,000-19,999 Large Enterprise</asp:ListItem>
-                                                <asp:ListItem Value="20,000+">20,000+ Large Enterprise</asp:ListItem>
-                                            </asp:DropDownList>
+                                            <asp:DropDownList runat="server" ID="CustomerNumEmployeesDropdown" Height="20px" Width="325px"></asp:DropDownList>
                                             <p></p>
                                         </div>
                                     </fieldset>
-                                    <asp:Button ID="BtnQuest1" Text="Submit" runat="server" OnClick="BtnQuest1_Click"  />
+                                    <asp:Button ID="CustInfoSubmitButton" Text="Submit" runat="server" OnClick="CustInfoSubmitButton_Click" />
                                 </fieldset>
                             </div>
                         </form>

@@ -22,57 +22,57 @@ namespace latus {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// customer_name control.
+        /// CustomerNameTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox customer_name;
+        protected global::System.Web.UI.WebControls.TextBox CustomerNameTextBox;
         
         /// <summary>
-        /// customer_industry_dropdown control.
+        /// CustomerIndustryDropdown control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList customer_industry_dropdown;
+        protected global::System.Web.UI.WebControls.DropDownList CustomerIndustryDropdown;
         
         /// <summary>
-        /// customer_headquarters control.
+        /// CustomerHeadquartersTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox customer_headquarters;
+        protected global::System.Web.UI.WebControls.TextBox CustomerHeadquartersTextBox;
         
         /// <summary>
-        /// customer_geography_dropdown control.
+        /// CustomerGeographyDropdown control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList customer_geography_dropdown;
+        protected global::System.Web.UI.WebControls.DropDownList CustomerGeographyDropdown;
         
         /// <summary>
-        /// customer_number_employees_dropdown control.
+        /// CustomerNumEmployeesDropdown control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList customer_number_employees_dropdown;
+        protected global::System.Web.UI.WebControls.DropDownList CustomerNumEmployeesDropdown;
         
         /// <summary>
-        /// BtnQuest1 control.
+        /// CustInfoSubmitButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnQuest1;
+        protected global::System.Web.UI.WebControls.Button CustInfoSubmitButton;
     }
 }
