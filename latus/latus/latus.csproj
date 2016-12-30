@@ -71,6 +71,8 @@
     <Content Include="CustQuestionnaire3.aspx" />
     <Content Include="CustInformation.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="info.png" />
+    <Content Include="infotiny.png" />
     <Content Include="maia.css" />
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\latus=web.pubxml" />
@@ -88,6 +90,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="class.cs" />
     <Compile Include="CustQuestionnaire1.aspx.cs">
       <DependentUpon>CustQuestionnaire1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -116,6 +119,7 @@
     <Compile Include="CustInformation.aspx.designer.cs">
       <DependentUpon>CustInformation.aspx</DependentUpon>
     </Compile>
+    <Compile Include="db.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
