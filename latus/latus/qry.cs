@@ -7,6 +7,7 @@ namespace latus
 {
     public class qry
     {
-        public const string overwatchcharacterdata = "select * from OverwatchCharacter";
+        public const string IndustryData = "select IndustryId, IndustryType from Industry";
+        public const string NumEmployeeData = "select NumEmployeesId, NumEmployeesType from NumEmployees";
     }
 }
