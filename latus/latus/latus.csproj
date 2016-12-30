@@ -119,7 +119,7 @@
     <Compile Include="CustInformation.aspx.designer.cs">
       <DependentUpon>CustInformation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="db.cs" />
+    <Compile Include="sql.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
