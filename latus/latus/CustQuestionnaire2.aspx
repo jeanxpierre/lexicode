@@ -67,9 +67,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q1_1_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q1_1_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -88,9 +88,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q1_2_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q1_2_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -109,9 +109,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q1_3_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q1_3_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -130,9 +130,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q1_4_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q1_4_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -151,9 +151,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q1_5_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q1_5_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -172,9 +172,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q1_6_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q1_6_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -193,9 +193,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q1_7_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q1_7_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -214,9 +214,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q1_8_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q1_8_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -235,9 +235,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q1_9_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q1_9_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -256,9 +256,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q1_10_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q1_10_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -277,9 +277,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q1_11_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q1_11_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -298,9 +298,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q1_12_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q1_12_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -319,9 +319,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q1_13_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q1_13_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -340,9 +340,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q1_14_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q1_14_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -361,8 +361,8 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q1_15_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q1_15_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -401,9 +401,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q2_1_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q2_1_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -422,9 +422,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q2_2_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q2_2_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -443,9 +443,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item"> 
                                                     <asp:RadioButtonList ID="Q2_3_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q2_3_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -464,9 +464,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q2_4_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q2_4_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -485,9 +485,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q2_5_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q2_5_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -506,9 +506,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q2_6_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q2_6_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -527,9 +527,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q2_7_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q2_7_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -548,9 +548,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q2_8_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q2_8_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -569,9 +569,9 @@
                                                 </label>
                                                 <div class="vsaq-radio-item">
                                                     <asp:RadioButtonList ID="Q2_9_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q2_9_Radio_SelectedIndexChanged">
-                                                        <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
-                                                        <asp:ListItem Value="ProblemUnsure" Text="Unsure"></asp:ListItem>
+                                                        <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="1" Text="No"></asp:ListItem>
+                                                        <asp:ListItem Value="3" Text="Unsure"></asp:ListItem>
                                                     </asp:RadioButtonList>
 
                                                     <div style="margin-left: 40px;">
@@ -606,8 +606,8 @@
                                                     </label>
                                                     <div class="vsaq-radio-item">
                                                         <asp:RadioButtonList ID="Q3_1_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q3_1_Radio_SelectedIndexChanged">
-                                                            <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                            <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                            <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                            <asp:ListItem Value="1" Text="No"></asp:ListItem>
                                                         </asp:RadioButtonList>
                                                         <div style="margin-left: 40px;">
                                                             <asp:TextBox Visible="false" runat="server" ID="Q3_1_TextBox" MaxLength="50" Height="60px" Width="800px" Placeholder="Please describe if necessary" TextMode="MultiLine"></asp:TextBox>
@@ -681,8 +681,8 @@
                                                     </label>
                                                      <div class="vsaq-radio-item">
                                                         <asp:RadioButtonList ID="Q3_5_Radio" RepeatDirection="Horizontal" runat="server" AutoPostBack="True" OnSelectedIndexChanged="Q3_5_Radio_SelectedIndexChanged">
-                                                            <asp:ListItem Value="ProblemYes" Text="Yes"></asp:ListItem>
-                                                            <asp:ListItem Value="ProblemNo" Text="No"></asp:ListItem>
+                                                            <asp:ListItem Value="2" Text="Yes"></asp:ListItem>
+                                                            <asp:ListItem Value="1" Text="No"></asp:ListItem>
                                                         </asp:RadioButtonList>
 
                                                          <div style="margin-left: 40px;">

@@ -310,9 +310,9 @@ namespace latus
             List<Answer> FinalAnswerList = new List<Answer>();
             foreach (Answer Answer in QuestionnaireAnswers)
             {
-                if (Answer.SimpleAnswerId.Length > 0)
+                if (Answer.SimpleAnswerId > 0)
                 {
-                    FinalAnswerList.Add(Answer)
+                    FinalAnswerList.Add(Answer);
                 }
             }
 
@@ -321,7 +321,7 @@ namespace latus
                 .Select(li => li.Value)
                 .ToList();
 
-            ListQuestionnaire1Answers.Add(new Questionnaire1Answers(QuestionnaireAnswers, UseCaseIds));
+            ListQuestionnaire1Answers.Add(new Questionnaire1Answers(FinalAnswerList, UseCaseIds));
             sql.updateQuestionnaire1Answers(ListQuestionnaire1Answers, out error);
             err.Text = error;
 

@@ -392,10 +392,10 @@ namespace latus
                         cmd.Parameters.Add("@SimpleAnswerId", SqlDbType.Int);
                         cmd.Parameters.Add("@AnswerDesc", SqlDbType.NVarChar, 128);
                         cmd.Parameters.Add("@ScorableBoolId", SqlDbType.Int);
-                        cmd.Parameters.Add("@Score", SqlDbType.Int);
+                        cmd.Parameters.Add("@Score", SqlDbType.Decimal);
                         cmd.Parameters["@Score"].Precision = 3;
                         cmd.Parameters["@Score"].Scale = 1;
-                        cmd.Parameters.Add("@Weight", SqlDbType.Int);
+                        cmd.Parameters.Add("@Weight", SqlDbType.Decimal);
                         cmd.Parameters["@Weight"].Precision = 3;
                         cmd.Parameters["@Weight"].Scale = 1;
 
@@ -428,6 +428,80 @@ namespace latus
             }
         }
 
-        
+        public static void updateQuestionnaire3Answers(List<Questionnaire3Answers> q3, out string error)
+        {
+            error = "";
+            using (SqlConnection conn = new SqlConnection(ds.latusdb))
+            {
+                using (SqlCommand cmd = conn.CreateCommand())
+                {
+                    try
+                    {
+
+                        cmd.CommandText = @"
+                                    IF NOT EXISTS ( SELECT AnswerId from Answer 
+                                                    WHERE AnswerId = @AnswerId AND QuestionId = @QuestionId)
+                                    BEGIN 
+                                            INSERT INTO Answer (
+                                                                        AnswerId,
+                                                                        CustomerOrSolutionId,
+                                                                        QuestionId,
+                                                                        SimpleAnswerId,
+                                                                        AnswerDesc,
+                                                                        ScorableBoolId,
+                                                                        Score,
+                                                                        Weight)
+                                            VALUES (
+                                                                        @AnswerId,
+                                                                        @CustomerOrSolutionId,
+                                                                        @QuestionId,
+                                                                        @SimpleAnswerId,
+                                                                        @AnswerDesc,
+                                                                        @ScorableBoolId,
+                                                                        @Score,
+                                                                        @Weight)
+                                    END";
+
+                        cmd.Parameters.Add("@AnswerId", SqlDbType.UniqueIdentifier);
+                        cmd.Parameters.Add("@CustomerOrSolutionId", SqlDbType.UniqueIdentifier);
+                        cmd.Parameters.Add("@QuestionId", SqlDbType.Int);
+                        cmd.Parameters.Add("@SimpleAnswerId", SqlDbType.Int);
+                        cmd.Parameters.Add("@AnswerDesc", SqlDbType.NVarChar, 128);
+                        cmd.Parameters.Add("@ScorableBoolId", SqlDbType.Int);
+                        cmd.Parameters.Add("@Score", SqlDbType.Decimal);
+                        cmd.Parameters["@Score"].Precision = 3;
+                        cmd.Parameters["@Score"].Scale = 1;
+                        cmd.Parameters.Add("@Weight", SqlDbType.Decimal);
+                        cmd.Parameters["@Weight"].Precision = 3;
+                        cmd.Parameters["@Weight"].Scale = 1;
+
+                        conn.Open();
+
+                        foreach (Questionnaire3Answers q3Item in q3)
+                        {
+                            foreach (Answer Answer in q3Item.AnswerList)
+                            {
+                                cmd.Parameters["@AnswerId"].Value = Answer.AnswerId;
+                                cmd.Parameters["@CustomerOrSolutionId"].Value = Answer.CustomerOrSolutionId;
+                                cmd.Parameters["@QuestionId"].Value = Answer.QuestionId;
+                                cmd.Parameters["@SimpleAnswerId"].Value = Answer.SimpleAnswerId;
+                                cmd.Parameters["@AnswerDesc"].Value = Answer.AnswerDesc;
+                                cmd.Parameters["@ScorableBoolId"].Value = Answer.ScorableBoolId;
+                                cmd.Parameters["@Score"].Value = DBNull.Value;
+                                cmd.Parameters["@Weight"].Value = Answer.Weight;
+                                cmd.ExecuteNonQuery();
+                            }
+                        }
+
+                        conn.Close();
+                    }
+                    catch (Exception Ex)
+                    {
+                        error = Ex.ToString();
+                    }
+
+                }
+            }
+        }
     }
 }

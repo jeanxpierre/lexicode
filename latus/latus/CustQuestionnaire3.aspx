@@ -111,21 +111,23 @@
                                                 </label>
                                                 <div class="vsaq-checkbox-item">
                                                     <asp:CheckBoxList ID="SecurityMeasureCheckBox" RepeatColumns="5" RepeatLayoput="Flow" runat="server">
-                                                        <asp:ListItem Value="SecurityRoundtables" Text="Security Roundtables"></asp:ListItem>
-                                                        <asp:ListItem Value="VulnAssessments" Text="Vulnerability Assessments"></asp:ListItem>
-                                                        <asp:ListItem Value="ProcMaturityAssessments" Text="Process Maturity Assessments"></asp:ListItem>
-                                                        <asp:ListItem Value="CompAssessments" Text="Compromise Assessments"></asp:ListItem>
-                                                        <asp:ListItem Value="EntperpriseRiskAssessment" Text="Enterprise Risk Assesssment"></asp:ListItem>
-                                                        <asp:ListItem Value="PenTest" Text="Penetration Test"></asp:ListItem>
-                                                        <asp:ListItem Value="RedTeamTest" Text="Red Team Testing (Internal)"></asp:ListItem>
-                                                        <asp:ListItem Value="GRCDash" Text="Governance/Risk/Compliance Dashboard"></asp:ListItem>
-                                                        <asp:ListItem Value="CertAudits" Text="Certification Audits (SOC2, ISO27001, HITRUST)"></asp:ListItem>
+                                                        <asp:ListItem Value="Security Roundtables" Text="Security Roundtables"></asp:ListItem>
+                                                        <asp:ListItem Value="Vulnerability Assessments" Text="Vulnerability Assessments"></asp:ListItem>
+                                                        <asp:ListItem Value="Process Maturity Assessments" Text="Process Maturity Assessments"></asp:ListItem>
+                                                        <asp:ListItem Value="Compropmise Assessments" Text="Compromise Assessments"></asp:ListItem>
+                                                        <asp:ListItem Value="Entperprise Risk Assessments" Text="Enterprise Risk Assesssments"></asp:ListItem>
+                                                        <asp:ListItem Value="Penetration Tests" Text="Penetration Tests"></asp:ListItem>
+                                                        <asp:ListItem Value="Red Team Testing (Internal)" Text="Red Team Testing (Internal)"></asp:ListItem>
+                                                        <asp:ListItem Value="Governance/Risk/Compliance Dashboard" Text="Governance/Risk/Compliance Dashboard"></asp:ListItem>
+                                                        <asp:ListItem Value="Certification Audits" Text="Certification Audits (SOC2, ISO27001, HITRUST)"></asp:ListItem>
                                                         <asp:ListItem Value="Other" Text="Other"></asp:ListItem>
                                                     </asp:CheckBoxList>
                                                 </div>
                                             </div>
                                         </div>
-
+                                        <div style="color: #FF0000; font-size: medium">
+                                            <asp:Literal ID="err" runat="server"></asp:Literal>
+                                        </div>
                                     </fieldset>
                                     <asp:Button ID="CustomerQuestionnaire3SubmitButton" Text="Submit" runat="server" OnClick="CustomerQuestionnaire3SubmitButton_Click"  />
                                 </fieldset>

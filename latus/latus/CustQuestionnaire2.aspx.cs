@@ -15,7 +15,7 @@ namespace latus
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            ID = Request.QueryString["id"];
         }
 
         protected void Q1_1_Radio_SelectedIndexChanged(object sender, EventArgs e)
@@ -230,43 +230,63 @@ namespace latus
             Guid CustomerID = new Guid();
             Guid.TryParse(ID, out CustomerID);
 
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 1, Q1_1_Radio.Text, Q1_1_TextBox.Text, "0", null, Q1_1_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 2, Q1_2_Radio.Text, Q1_2_TextBox.Text, "0", null, Q1_2_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 3, Q1_3_Radio.Text, Q1_3_TextBox.Text, "0", null, Q1_3_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 4, Q1_4_Radio.Text, Q1_4_TextBox.Text, "0", null, Q1_4_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 5, Q1_5_Radio.Text, Q1_5_TextBox.Text, "0", null, Q1_5_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 6, Q1_6_Radio.Text, Q1_6_TextBox.Text, "0", null, Q1_6_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 7, Q1_7_Radio.Text, Q1_7_TextBox.Text, "0", null, Q1_7_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 8, Q1_8_Radio.Text, Q1_8_TextBox.Text, "0", null, Q1_8_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 9, Q1_9_Radio.Text, Q1_9_TextBox.Text, "0", null, Q1_9_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 10, Q1_10_Radio.Text, Q1_10_TextBox.Text, "0", null, Q1_10_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 11, Q1_11_Radio.Text, Q1_11_TextBox.Text, "0", null, Q1_11_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 12, Q1_12_Radio.Text, Q1_12_TextBox.Text, "0", null, Q1_12_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 13, Q1_13_Radio.Text, Q1_13_TextBox.Text, "0", null, Q1_13_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 14, Q1_14_Radio.Text, Q1_14_TextBox.Text, "0", null, Q1_14_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 15, Q1_15_Radio.Text, Q1_15_TextBox.Text, "0", null, Q1_15_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 16, Q2_1_Radio.Text, Q2_1_TextBox.Text, "0", null, Q2_1_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 17, Q2_2_Radio.Text, Q2_2_TextBox.Text, "0", null, Q2_2_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 18, Q2_3_Radio.Text, Q2_3_TextBox.Text, "0", null, Q2_3_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 19, Q2_4_Radio.Text, Q2_4_TextBox.Text, "0", null, Q2_4_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 20, Q2_5_Radio.Text, Q2_5_TextBox.Text, "0", null, Q2_5_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 21, Q2_6_Radio.Text, Q2_6_TextBox.Text, "0", null, Q2_6_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 22, Q2_7_Radio.Text, Q2_7_TextBox.Text, "0", null, Q2_7_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 23, Q2_8_Radio.Text, Q2_8_TextBox.Text, "0", null, Q2_8_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 24, Q2_9_Radio.Text, Q2_9_TextBox.Text, "0", null, Q2_9_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 25, Q3_1_Radio.Text, Q3_1_TextBox.Text, "0", null, Q3_1_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 26, "4", Q3_2_TextBox.Text, "0", null, Q3_2_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 27, "4", Q3_3_TextBox.Text, "0", null, Q3_3_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 28, "4", Q3_4_TextBox.Text, "0", null, Q3_4_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 29, "4", Q3_5_TextBox.Text, "0", null, Q3_5_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 30, "4", Q3_6_TextBox.Text, "0", null, Q3_6_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 31, "4", Q3_7_TextBox.Text, "0", null, Q3_7_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 32, "4", Q3_8_TextBox.Text, "0", null, Q3_8_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 33, "4", Q3_9_TextBox.Text, "0", null, Q3_9_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 34, "4", Q3_10_TextBox.Text, "0", null, Q3_10_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 35, "4", Q3_11_TextBox.Text, "0", null, Q3_11_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 42, Q1_1_Radio.Text, Q1_1_TextBox.Text, "0", null, Q1_1_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 43, Q1_2_Radio.Text, Q1_2_TextBox.Text, "0", null, Q1_2_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 44, Q1_3_Radio.Text, Q1_3_TextBox.Text, "0", null, Q1_3_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 45, Q1_4_Radio.Text, Q1_4_TextBox.Text, "0", null, Q1_4_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 46, Q1_5_Radio.Text, Q1_5_TextBox.Text, "0", null, Q1_5_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 47, Q1_6_Radio.Text, Q1_6_TextBox.Text, "0", null, Q1_6_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 48, Q1_7_Radio.Text, Q1_7_TextBox.Text, "0", null, Q1_7_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 49, Q1_8_Radio.Text, Q1_8_TextBox.Text, "0", null, Q1_8_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 50, Q1_9_Radio.Text, Q1_9_TextBox.Text, "0", null, Q1_9_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 51, Q1_10_Radio.Text, Q1_10_TextBox.Text, "0", null, Q1_10_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 52, Q1_11_Radio.Text, Q1_11_TextBox.Text, "0", null, Q1_11_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 53, Q1_12_Radio.Text, Q1_12_TextBox.Text, "0", null, Q1_12_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 54, Q1_13_Radio.Text, Q1_13_TextBox.Text, "0", null, Q1_13_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 55, Q1_14_Radio.Text, Q1_14_TextBox.Text, "0", null, Q1_14_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 56, Q1_15_Radio.Text, Q1_15_TextBox.Text, "0", null, Q1_15_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 57, Q2_1_Radio.Text, Q2_1_TextBox.Text, "0", null, Q2_1_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 58, Q2_2_Radio.Text, Q2_2_TextBox.Text, "0", null, Q2_2_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 59, Q2_3_Radio.Text, Q2_3_TextBox.Text, "0", null, Q2_3_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 60, Q2_4_Radio.Text, Q2_4_TextBox.Text, "0", null, Q2_4_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 61, Q2_5_Radio.Text, Q2_5_TextBox.Text, "0", null, Q2_5_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 62, Q2_6_Radio.Text, Q2_6_TextBox.Text, "0", null, Q2_6_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 63, Q2_7_Radio.Text, Q2_7_TextBox.Text, "0", null, Q2_7_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 64, Q2_8_Radio.Text, Q2_8_TextBox.Text, "0", null, Q2_8_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 65, Q2_9_Radio.Text, Q2_9_TextBox.Text, "0", null, Q2_9_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 66, Q3_1_Radio.Text, Q3_1_TextBox.Text, "0", null, Q3_1_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 67, "4", Q3_2_TextBox.Text, "0", null, Q3_2_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 68, "4", Q3_3_TextBox.Text, "0", null, Q3_3_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 69, "4", Q3_4_TextBox.Text, "0", null, Q3_4_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 70, "4", Q3_5_TextBox.Text, "0", null, Q3_5_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 71, "4", Q3_6_TextBox.Text, "0", null, Q3_6_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 72, "4", Q3_7_TextBox.Text, "0", null, Q3_7_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 73, "4", Q3_8_TextBox.Text, "0", null, Q3_8_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 74, "4", Q3_9_TextBox.Text, "0", null, Q3_9_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 75, "4", Q3_10_TextBox.Text, "0", null, Q3_10_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 76, "4", Q3_11_TextBox.Text, "0", null, Q3_11_WeightTextBox.Text));
 
-            ListQuestionnaire2Answers.Add(new Questionnaire2Answers(QuestionnaireAnswers));
+            List<Answer> FinalAnswerList = new List<Answer>();
+            foreach (Answer Answer in QuestionnaireAnswers)
+            {
+                if (Answer.SimpleAnswerId > 0)
+                {
+                    if (Answer.SimpleAnswerId == 4)
+                    {
+                        if(Answer.AnswerDesc != string.Empty)
+                        {
+                            FinalAnswerList.Add(Answer);
+                        }
+                    }
+                    
+                    else
+                    {
+                        FinalAnswerList.Add(Answer);
+                    }
+                }
+            }
+
+            ListQuestionnaire2Answers.Add(new Questionnaire2Answers(FinalAnswerList));
             sql.updateQuestionnaire2Answers(ListQuestionnaire2Answers, out error);
             err.Text = error;
 
