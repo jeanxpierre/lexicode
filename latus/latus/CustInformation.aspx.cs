@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace latus
 {
-    public partial class _default : System.Web.UI.Page
+    public partial class CustInformation : System.Web.UI.Page
     {
         
         string error = string.Empty;
@@ -38,7 +38,7 @@ namespace latus
                             }
                             catch (Exception Ex)
                             {
-                                // Do something :-)
+                                error = Ex.ToString();
                             }
                         }
 
@@ -58,7 +58,7 @@ namespace latus
                             }
                             catch (Exception Ex)
                             {
-                                // Do something!
+                                error = Ex.ToString();
                             }
                         }
 
@@ -78,7 +78,7 @@ namespace latus
                             }
                             catch (Exception Ex)
                             {
-                                // Do something!
+                                error = Ex.ToString();
                             }
                         }
                     }
@@ -88,7 +88,7 @@ namespace latus
                 }
                 catch (Exception Ex)
                 {
-                    //Do something!
+                    error = Ex.ToString();
                 }
             }
         }
@@ -98,7 +98,11 @@ namespace latus
             List<CustomerInfo> CustInfo = new List<CustomerInfo>();
 
             CustInfo.Add(new CustomerInfo(CustomerNameTextBox.Text, CustomerIndustryDropdown.Text, CustomerHeadquartersTextBox.Text, CustomerGeographyDropdown.Text, CustomerNumEmployeesDropdown.Text));
-            sql.updateCustomerInfo(CustInfo);
+            sql.updateCustomerInfo(CustInfo, out error);
+            err.Text = error;
+
+            Response.Redirect("/CustQuestionnaire1.aspx?id=" + CustInfo[0].CustomerId.ToString());
+
         }
     }
 }

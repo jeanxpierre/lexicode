@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CustInformation.aspx.cs" Inherits="latus._default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CustInformation.aspx.cs" Inherits="latus.CustInformation" %>
 
 <!DOCTYPE html>
 
@@ -96,6 +96,9 @@
                                             </div>
                                             <asp:DropDownList runat="server" ID="CustomerNumEmployeesDropdown" Height="20px" Width="325px"></asp:DropDownList>
                                             <p></p>
+                                        </div>
+                                        <div style="color: #FF0000; font-size: medium">
+                                            <asp:Literal ID="err" runat="server"></asp:Literal>
                                         </div>
                                     </fieldset>
                                     <asp:Button ID="CustInfoSubmitButton" Text="Submit" runat="server" OnClick="CustInfoSubmitButton_Click" />

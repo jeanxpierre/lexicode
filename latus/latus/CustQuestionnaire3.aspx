@@ -38,61 +38,61 @@
                             <div class="vsaq-body" id="_vsaq_body">
                                 <fieldset class="vsaq-item vsaq-block">
                                     <legend>
-                                        <span class="vsaq-label-text" id="text1">Customer Questionnaire Part 3</span>
+                                        <span class="vsaq-label-text" id="CustomerQuestionnairePart3">Customer Questionnaire Part 3</span>
                                         <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
                                     </legend>
 
                                     <fieldset class="vsaq-item vsaq-block">
                                         <legend>
-                                            <span class="vsaq-label-text" id="text2">Business Requirements</span>
+                                            <span class="vsaq-label-text" id="BusinessRequirements">Business Requirements</span>
                                             <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
                                         </legend>
 
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_name">
+                                        <div class="vsaq-item">
                                             <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_name">
+                                                <label class="vsaq-label-text">
                                                     Vendor Viability
                                                 </label>
                                             </div>
-                                            <asp:TextBox runat="server" ID="customer_name" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                            <asp:TextBox runat="server" ID="Q1_WeightTextBox" Placeholder="Weight" Column="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
                                             <p></p>
                                         </div>
 
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_name">
+                                        <div class="vsaq-item">
                                             <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_name">
+                                                <label class="vsaq-label-text">
                                                     Environment Compatibility
                                                 </label>
                                             </div>
-                                            <asp:TextBox runat="server" ID="TextBox2" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                            <asp:TextBox runat="server" ID="Q2_WeightTextBox" Placeholder="Weight" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
                                             <p></p>
                                         </div>
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_name">
+                                        <div class="vsaq-item">
                                             <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_name">
+                                                <label class="vsaq-label-text">
                                                     Risk Mitigation
                                                 </label>
                                             </div>
-                                            <asp:TextBox runat="server" ID="TextBox3" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                            <asp:TextBox runat="server" ID="Q3_WeightTextBox" Placeholder="Weight" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
                                             <p></p>
                                         </div>
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_name">
+                                        <div class="vsaq-item">
                                             <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_name">
+                                                <label class="vsaq-label-text">
                                                     Business Use Case Alignment
                                                 </label>
                                             </div>
-                                            <asp:TextBox runat="server" ID="TextBox5" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                            <asp:TextBox runat="server" ID="Q4_WeightTextBox" Placeholder="Weight" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
                                             <p></p>
                                         </div>
 
-                                         <div class="vsaq-item" data-vsaq-container-for="customer_name">
+                                         <div class="vsaq-item">
                                             <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_name">
+                                                <label class="vsaq-label-text">
                                                     Total Cost of Ownership (TCO)
                                                 </label>
                                             </div>
-                                            <asp:TextBox runat="server" ID="TextBox6" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                            <asp:TextBox runat="server" ID="Q5_WeightTextBox" Placeholder="Weight" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
                                             <p></p>
                                         </div>
 
@@ -110,7 +110,7 @@
                                                     How do you currently measure your security? (Check all that apply)
                                                 </label>
                                                 <div class="vsaq-checkbox-item">
-                                                    <asp:CheckBoxList ID="checkboxlist1" RepeatColumns="5" RepeatLayoput="Flow" runat="server">
+                                                    <asp:CheckBoxList ID="SecurityMeasureCheckBox" RepeatColumns="5" RepeatLayoput="Flow" runat="server">
                                                         <asp:ListItem Value="SecurityRoundtables" Text="Security Roundtables"></asp:ListItem>
                                                         <asp:ListItem Value="VulnAssessments" Text="Vulnerability Assessments"></asp:ListItem>
                                                         <asp:ListItem Value="ProcMaturityAssessments" Text="Process Maturity Assessments"></asp:ListItem>
@@ -127,7 +127,7 @@
                                         </div>
 
                                     </fieldset>
-                                    <asp:Button ID="BtnQuest1" Text="Submit" runat="server" OnClick="BtnQuest1_Click"  />
+                                    <asp:Button ID="CustomerQuestionnaire3SubmitButton" Text="Submit" runat="server" OnClick="CustomerQuestionnaire3SubmitButton_Click"  />
                                 </fieldset>
                             </div>
                         </form>

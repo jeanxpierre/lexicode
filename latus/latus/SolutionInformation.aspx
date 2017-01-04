@@ -42,6 +42,67 @@
                                         <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
                                     </legend>
                                     <!-- Description: Information gathering - weightings to be entered manually by analyst, may be captured from customers verbally if they are interested or knowledgable -->
+                                    
+                                     <fieldset class="vsaq-item vsaq-block">
+                                        <legend>
+                                            <span class="vsaq-label-text">Business Viability</span>
+                                            <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
+                                        </legend>
+                                        <div class="vsaq-item">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text">
+                                                    Demonstrated customer base similar to new customer?
+                                                </label>
+                                                <div class="vsaq-radio-item" id="BVQuestionRadio1">
+                                                    <asp:RadioButtonList ID="RadioBtn1" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="CustBaseYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="CustBaseNo" Text="No"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text">
+                                                    Are the existing customers referenceable?
+                                                </label>
+                                                <div class="vsaq-radio-item" id="BVQuestionRadio2">
+                                                    <asp:RadioButtonList ID="RadioButtonList80" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="CustReferenceableYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="CustReferenceableNo" Text="No"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vsaq-item">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text">
+                                                    Are they using this solution in production?
+                                                </label>
+                                                <div class="vsaq-radio-item" id="BVQuestionRadio3">
+                                                    <asp:RadioButtonList ID="RadioButtonList81" RepeatDirection="Horizontal" runat="server">
+                                                        <asp:ListItem Value="SolInProductionYes" Text="Yes"></asp:ListItem>
+                                                        <asp:ListItem Value="SolInProductionNo" Text="No"></asp:ListItem>
+                                                    </asp:RadioButtonList>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="vsaq-item">
+                                            <div class="vsaq-question-title">
+                                                <label class="vsaq-label-text">
+                                                    If so, how big is the deployment?
+                                               
+                                                </label>
+                                            </div>
+                                            <asp:TextBox runat="server" ID="BVQuestionTextBox1" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                            <p></p>
+                                        </div>
+                                        
+                                </fieldset>
 
                                     <fieldset class="vsaq-item vsaq-block">
                                         <legend>
@@ -182,7 +243,7 @@
 
                                     <fieldset class="vsaq-item vsaq-block">
                                         <legend>
-                                            <span class="vsaq-label-text" id="text12">Desktops and Laptops</span>
+                                            <span class="vsaq-label-text" id="text12">Servers</span>
                                             <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
                                         </legend>
 

@@ -71,8 +71,6 @@
     <Content Include="CustQuestionnaire3.aspx" />
     <Content Include="CustInformation.aspx" />
     <Content Include="Default.aspx" />
-    <Content Include="info.png" />
-    <Content Include="infotiny.png" />
     <Content Include="maia.css" />
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\latus=web.pubxml" />

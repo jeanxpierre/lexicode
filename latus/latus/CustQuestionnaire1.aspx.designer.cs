@@ -22,381 +22,1128 @@ namespace latus {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// RadioBtn1 control.
+        /// ScriptManager control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioBtn1;
+        protected global::System.Web.UI.ScriptManager ScriptManager;
         
         /// <summary>
-        /// RadioButtonList2 control.
+        /// UpdatePanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList2;
+        protected global::System.Web.UI.UpdatePanel UpdatePanel;
         
         /// <summary>
-        /// RadioButtonList3 control.
+        /// Q1_1_Radio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList3;
+        protected global::System.Web.UI.WebControls.RadioButtonList Q1_1_Radio;
         
         /// <summary>
-        /// RadioButtonList4 control.
+        /// Q1_1_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList4;
+        protected global::System.Web.UI.WebControls.TextBox Q1_1_TextBox;
         
         /// <summary>
-        /// checkboxlist1 control.
+        /// Q1_1_WeightTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList checkboxlist1;
+        protected global::System.Web.UI.WebControls.TextBox Q1_1_WeightTextBox;
         
         /// <summary>
-        /// RadioButtonList5 control.
+        /// Q1_2_Radio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList5;
+        protected global::System.Web.UI.WebControls.RadioButtonList Q1_2_Radio;
         
         /// <summary>
-        /// RadioButtonList6 control.
+        /// Q1_2_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList6;
+        protected global::System.Web.UI.WebControls.TextBox Q1_2_TextBox;
         
         /// <summary>
-        /// RadioButtonList7 control.
+        /// Q1_2_WeightTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList7;
+        protected global::System.Web.UI.WebControls.TextBox Q1_2_WeightTextBox;
         
         /// <summary>
-        /// RadioButtonList8 control.
+        /// Q1_3_Radio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList8;
+        protected global::System.Web.UI.WebControls.RadioButtonList Q1_3_Radio;
         
         /// <summary>
-        /// RadioButtonList9 control.
+        /// Q1_3_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList9;
+        protected global::System.Web.UI.WebControls.TextBox Q1_3_TextBox;
         
         /// <summary>
-        /// RadioButtonList10 control.
+        /// Q1_3_WeightTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList10;
+        protected global::System.Web.UI.WebControls.TextBox Q1_3_WeightTextBox;
         
         /// <summary>
-        /// RadioButtonList11 control.
+        /// Q1_4_Radio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList11;
+        protected global::System.Web.UI.WebControls.RadioButtonList Q1_4_Radio;
         
         /// <summary>
-        /// RadioButtonList12 control.
+        /// Q1_4_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList12;
+        protected global::System.Web.UI.WebControls.TextBox Q1_4_TextBox;
         
         /// <summary>
-        /// RadioButtonList13 control.
+        /// Q1_4_WeightTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList13;
+        protected global::System.Web.UI.WebControls.TextBox Q1_4_WeightTextBox;
         
         /// <summary>
-        /// RadioButtonList14 control.
+        /// UseCase_CheckBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList14;
+        protected global::System.Web.UI.WebControls.CheckBoxList UseCase_CheckBox;
         
         /// <summary>
-        /// RadioButtonList15 control.
+        /// Q2_1_Radio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList15;
+        protected global::System.Web.UI.WebControls.RadioButtonList Q2_1_Radio;
         
         /// <summary>
-        /// RadioButtonList16 control.
+        /// Q2_1_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList16;
+        protected global::System.Web.UI.WebControls.TextBox Q2_1_TextBox;
         
         /// <summary>
-        /// RadioButtonList17 control.
+        /// Q2_1_WeightTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList17;
+        protected global::System.Web.UI.WebControls.TextBox Q2_1_WeightTextBox;
         
         /// <summary>
-        /// RadioButtonList18 control.
+        /// Q2_2_Radio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList18;
+        protected global::System.Web.UI.WebControls.RadioButtonList Q2_2_Radio;
         
         /// <summary>
-        /// RadioButtonList19 control.
+        /// Q2_2_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList19;
+        protected global::System.Web.UI.WebControls.TextBox Q2_2_TextBox;
         
         /// <summary>
-        /// RadioButtonList20 control.
+        /// Q2_2_WeightTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList20;
+        protected global::System.Web.UI.WebControls.TextBox Q2_2_WeightTextBox;
         
         /// <summary>
-        /// RadioButtonList21 control.
+        /// Q2_3_Radio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList21;
+        protected global::System.Web.UI.WebControls.RadioButtonList Q2_3_Radio;
         
         /// <summary>
-        /// RadioButtonList22 control.
+        /// Q2_3_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList22;
+        protected global::System.Web.UI.WebControls.TextBox Q2_3_TextBox;
         
         /// <summary>
-        /// RadioButtonList23 control.
+        /// Q2_3_WeightTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList23;
+        protected global::System.Web.UI.WebControls.TextBox Q2_3_WeightTextBox;
         
         /// <summary>
-        /// RadioButtonList24 control.
+        /// Q2_4_Radio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList24;
+        protected global::System.Web.UI.WebControls.RadioButtonList Q2_4_Radio;
         
         /// <summary>
-        /// RadioButtonList25 control.
+        /// Q2_4_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList25;
+        protected global::System.Web.UI.WebControls.TextBox Q2_4_TextBox;
         
         /// <summary>
-        /// RadioButtonList26 control.
+        /// Q2_4_WeightTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList26;
+        protected global::System.Web.UI.WebControls.TextBox Q2_4_WeightTextBox;
         
         /// <summary>
-        /// RadioButtonList27 control.
+        /// Q3_1_Radio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList27;
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_1_Radio;
         
         /// <summary>
-        /// RadioButtonList28 control.
+        /// Q3_1_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList28;
+        protected global::System.Web.UI.WebControls.TextBox Q3_1_TextBox;
         
         /// <summary>
-        /// RadioButtonList29 control.
+        /// Q3_1_WeightTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList29;
+        protected global::System.Web.UI.WebControls.TextBox Q3_1_WeightTextBox;
         
         /// <summary>
-        /// RadioButtonList30 control.
+        /// Q3_2_Radio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList30;
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_2_Radio;
         
         /// <summary>
-        /// RadioButtonList31 control.
+        /// Q3_2_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList31;
+        protected global::System.Web.UI.WebControls.TextBox Q3_2_TextBox;
         
         /// <summary>
-        /// RadioButtonList32 control.
+        /// Q3_2_WeightTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList32;
+        protected global::System.Web.UI.WebControls.TextBox Q3_2_WeightTextBox;
         
         /// <summary>
-        /// RadioButtonList33 control.
+        /// Q3_3_Radio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList33;
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_3_Radio;
         
         /// <summary>
-        /// RadioButtonList34 control.
+        /// Q3_3_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList34;
+        protected global::System.Web.UI.WebControls.TextBox Q3_3_TextBox;
         
         /// <summary>
-        /// RadioButtonList35 control.
+        /// Q3_3_WeightTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList35;
+        protected global::System.Web.UI.WebControls.TextBox Q3_3_WeightTextBox;
         
         /// <summary>
-        /// RadioButtonList36 control.
+        /// Q3_4_Radio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList36;
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_4_Radio;
         
         /// <summary>
-        /// RadioButtonList37 control.
+        /// Q3_4_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList37;
+        protected global::System.Web.UI.WebControls.TextBox Q3_4_TextBox;
         
         /// <summary>
-        /// RadioButtonList38 control.
+        /// Q3_4_WeightTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList38;
+        protected global::System.Web.UI.WebControls.TextBox Q3_4_WeightTextBox;
         
         /// <summary>
-        /// RadioButtonList39 control.
+        /// Q3_5_Radio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList39;
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_5_Radio;
         
         /// <summary>
-        /// RadioButtonList40 control.
+        /// Q3_5_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList40;
+        protected global::System.Web.UI.WebControls.TextBox Q3_5_TextBox;
         
         /// <summary>
-        /// BtnQuest1 control.
+        /// Q3_5_WeightTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnQuest1;
+        protected global::System.Web.UI.WebControls.TextBox Q3_5_WeightTextBox;
+        
+        /// <summary>
+        /// Q3_6_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_6_Radio;
+        
+        /// <summary>
+        /// Q3_6_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_6_TextBox;
+        
+        /// <summary>
+        /// Q3_6_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_6_WeightTextBox;
+        
+        /// <summary>
+        /// Q3_7_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_7_Radio;
+        
+        /// <summary>
+        /// Q3_7_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_7_TextBox;
+        
+        /// <summary>
+        /// Q3_7_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_7_WeightTextBox;
+        
+        /// <summary>
+        /// Q3_8_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_8_Radio;
+        
+        /// <summary>
+        /// Q3_8_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_8_TextBox;
+        
+        /// <summary>
+        /// Q3_8_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_8_WeightTextBox;
+        
+        /// <summary>
+        /// Q3_9_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_9_Radio;
+        
+        /// <summary>
+        /// Q3_9_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_9_TextBox;
+        
+        /// <summary>
+        /// Q3_9_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_9_WeightTextBox;
+        
+        /// <summary>
+        /// Q3_10_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_10_Radio;
+        
+        /// <summary>
+        /// Q3_10_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_10_TextBox;
+        
+        /// <summary>
+        /// Q3_10_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_10_WeightTextBox;
+        
+        /// <summary>
+        /// Q3_11_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_11_Radio;
+        
+        /// <summary>
+        /// Q3_11_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_11_TextBox;
+        
+        /// <summary>
+        /// Q3_11_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_11_WeightTextBox;
+        
+        /// <summary>
+        /// Q3_12_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_12_Radio;
+        
+        /// <summary>
+        /// Q3_12_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_12_TextBox;
+        
+        /// <summary>
+        /// Q3_12_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_12_WeightTextBox;
+        
+        /// <summary>
+        /// Q3_13_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_13_Radio;
+        
+        /// <summary>
+        /// Q3_13_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_13_TextBox;
+        
+        /// <summary>
+        /// Q3_13_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_13_WeightTextBox;
+        
+        /// <summary>
+        /// Q3_14_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_14_Radio;
+        
+        /// <summary>
+        /// Q3_14_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_14_TextBox;
+        
+        /// <summary>
+        /// Q3_14_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_14_WeightTextBox;
+        
+        /// <summary>
+        /// Q3_15_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_15_Radio;
+        
+        /// <summary>
+        /// Q3_15_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_15_TextBox;
+        
+        /// <summary>
+        /// Q3_15_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_15_WeightTextBox;
+        
+        /// <summary>
+        /// Q3_16_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_16_Radio;
+        
+        /// <summary>
+        /// Q3_16_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_16_TextBox;
+        
+        /// <summary>
+        /// Q3_16_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_16_WeightTextBox;
+        
+        /// <summary>
+        /// Q3_17_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_17_Radio;
+        
+        /// <summary>
+        /// Q3_17_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_17_TextBox;
+        
+        /// <summary>
+        /// Q3_17_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_17_WeightTextBox;
+        
+        /// <summary>
+        /// Q3_18_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_18_Radio;
+        
+        /// <summary>
+        /// Q3_18_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_18_TextBox;
+        
+        /// <summary>
+        /// Q3_18_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_18_WeightTextBox;
+        
+        /// <summary>
+        /// Q3_19_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_19_Radio;
+        
+        /// <summary>
+        /// Q3_19_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_19_TextBox;
+        
+        /// <summary>
+        /// Q3_19_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_19_WeightTextBox;
+        
+        /// <summary>
+        /// Q3_20_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_20_Radio;
+        
+        /// <summary>
+        /// Q3_20_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_20_TextBox;
+        
+        /// <summary>
+        /// Q3_20_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_20_WeightTextBox;
+        
+        /// <summary>
+        /// Q3_21_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_21_Radio;
+        
+        /// <summary>
+        /// Q3_21_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_21_TextBox;
+        
+        /// <summary>
+        /// Q3_21_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_21_WeightTextBox;
+        
+        /// <summary>
+        /// Q3_22_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_22_Radio;
+        
+        /// <summary>
+        /// Q3_22_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_22_TextBox;
+        
+        /// <summary>
+        /// Q3_22_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_22_WeightTextBox;
+        
+        /// <summary>
+        /// Q3_23_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_23_Radio;
+        
+        /// <summary>
+        /// Q3_23_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_23_TextBox;
+        
+        /// <summary>
+        /// Q3_23_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_23_WeightTextBox;
+        
+        /// <summary>
+        /// Q3_24_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_24_Radio;
+        
+        /// <summary>
+        /// Q3_24_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_24_TextBox;
+        
+        /// <summary>
+        /// Q3_24_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_24_WeightTextBox;
+        
+        /// <summary>
+        /// Q3_25_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q3_25_Radio;
+        
+        /// <summary>
+        /// Q3_25_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_25_TextBox;
+        
+        /// <summary>
+        /// Q3_25_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q3_25_WeightTextBox;
+        
+        /// <summary>
+        /// Q4_1_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q4_1_Radio;
+        
+        /// <summary>
+        /// Q4_1_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q4_1_TextBox;
+        
+        /// <summary>
+        /// Q4_1_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q4_1_WeightTextBox;
+        
+        /// <summary>
+        /// Q4_2_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q4_2_Radio;
+        
+        /// <summary>
+        /// Q4_2_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q4_2_TextBox;
+        
+        /// <summary>
+        /// Q4_2_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q4_2_WeightTextBox;
+        
+        /// <summary>
+        /// Q4_3_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q4_3_Radio;
+        
+        /// <summary>
+        /// Q4_3_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q4_3_TextBox;
+        
+        /// <summary>
+        /// Q4_3_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q4_3_WeightTextBox;
+        
+        /// <summary>
+        /// Q4_4_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q4_4_Radio;
+        
+        /// <summary>
+        /// Q4_4_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q4_4_TextBox;
+        
+        /// <summary>
+        /// Q4_4_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q4_4_WeightTextBox;
+        
+        /// <summary>
+        /// Q4_5_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q4_5_Radio;
+        
+        /// <summary>
+        /// Q4_5_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q4_5_TextBox;
+        
+        /// <summary>
+        /// Q4_5_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q4_5_WeightTextBox;
+        
+        /// <summary>
+        /// Q4_6_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q4_6_Radio;
+        
+        /// <summary>
+        /// Q4_6_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q4_6_TextBox;
+        
+        /// <summary>
+        /// Q4_6_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q4_6_WeightTextBox;
+        
+        /// <summary>
+        /// Q4_7_Radio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList Q4_7_Radio;
+        
+        /// <summary>
+        /// Q4_7_TextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q4_7_TextBox;
+        
+        /// <summary>
+        /// Q4_7_WeightTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Q4_7_WeightTextBox;
+        
+        /// <summary>
+        /// err control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal err;
+        
+        /// <summary>
+        /// CustQuestionnaire1SubmitButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button CustQuestionnaire1SubmitButton;
     }
 }

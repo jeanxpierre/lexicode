@@ -22,66 +22,66 @@ namespace latus {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// customer_name control.
+        /// Q1_WeightTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox customer_name;
+        protected global::System.Web.UI.WebControls.TextBox Q1_WeightTextBox;
         
         /// <summary>
-        /// TextBox2 control.
+        /// Q2_WeightTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox Q2_WeightTextBox;
         
         /// <summary>
-        /// TextBox3 control.
+        /// Q3_WeightTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox Q3_WeightTextBox;
         
         /// <summary>
-        /// TextBox5 control.
+        /// Q4_WeightTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox5;
+        protected global::System.Web.UI.WebControls.TextBox Q4_WeightTextBox;
         
         /// <summary>
-        /// TextBox6 control.
+        /// Q5_WeightTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox6;
+        protected global::System.Web.UI.WebControls.TextBox Q5_WeightTextBox;
         
         /// <summary>
-        /// checkboxlist1 control.
+        /// SecurityMeasureCheckBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList checkboxlist1;
+        protected global::System.Web.UI.WebControls.CheckBoxList SecurityMeasureCheckBox;
         
         /// <summary>
-        /// BtnQuest1 control.
+        /// CustomerQuestionnaire3SubmitButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnQuest1;
+        protected global::System.Web.UI.WebControls.Button CustomerQuestionnaire3SubmitButton;
     }
 }

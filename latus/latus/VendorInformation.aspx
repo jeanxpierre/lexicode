@@ -39,183 +39,117 @@
                             <div class="vsaq-body" id="_vsaq_body">
                                 <fieldset class="vsaq-item vsaq-block">
                                     <legend>
-                                        <span class="vsaq-label-text" id="text">Vendor Information</span>
+                                        <span class="vsaq-label-text">Vendor Information</span>
                                         <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
                                     </legend>
 
                                     <fieldset class="vsaq-item vsaq-block">
                                         <legend>
-                                            <span class="vsaq-label-text" id="text">Vendor Identity</span>
+                                            <span class="vsaq-label-text">Vendor Identity</span>
                                             <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
                                         </legend>
 
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_name">
+                                        <div class="vsaq-item" data-vsaq-container-for="VendorName">
                                             <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_name">
+                                                <label class="vsaq-label-text" for="VendorName">
                                                     Name
-                                               
+
                                                 </label>
                                             </div>
-                                            <asp:TextBox runat="server" ID="customer_name" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                            <asp:TextBox runat="server" ID="VendorNameTextBox" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
                                             <p></p>
                                         </div>
 
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_name">
+                                        <div class="vsaq-item" data-vsaq-container-for="VendorFounded">
                                             <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_name">
+                                                <label class="vsaq-label-text" for="VendorFounded">
                                                     Founded
-                                               
+
                                                 </label>
                                             </div>
-                                            <asp:TextBox runat="server" ID="TextBox1" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                            <asp:TextBox runat="server" ID="VendorFoundedTextBox" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
                                             <p></p>
                                         </div>
 
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_name">
+                                        <div class="vsaq-item" data-vsaq-container-for="VendorHeadquarters">
                                             <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_name">
+                                                <label class="vsaq-label-text" for="VendorHeadquarters">
                                                     Headquarters Location
                                                
                                                 </label>
                                             </div>
-                                            <asp:TextBox runat="server" ID="TextBox2" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                            <asp:TextBox runat="server" ID="VendorHeadquartersTextBox" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
                                             <p></p>
                                         </div>
 
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_name">
+                                        <div class="vsaq-item" data-vsaq-container-for="VendorPublicPrivate">
                                             <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_name">
+                                                <label class="vsaq-label-text" for="VendorPublicPrivate">
                                                     Public/Private
                                                
                                                 </label>
                                             </div>
-                                            <asp:TextBox runat="server" ID="TextBox3" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                            <asp:TextBox runat="server" ID="VendorPublicPrivateTextBox" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
                                             <p></p>
                                         </div>
 
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_name">
+                                        <div class="vsaq-item" data-vsaq-container-for="VendorNumEmployees">
                                             <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_name">
+                                                <label class="vsaq-label-text" for="VendorNumEmployees">
                                                     Number of Employees
                                                
                                                 </label>
                                             </div>
-                                            <asp:TextBox runat="server" ID="TextBox4" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                            <asp:TextBox runat="server" ID="VendorNumEmployeesTextBox" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
                                             <p></p>
                                         </div>
                                     </fieldset>
 
                                     <fieldset class="vsaq-item vsaq-block">
                                         <legend>
-                                            <span class="vsaq-label-text" id="text">Solution Identity</span>
+                                            <span class="vsaq-label-text">Solution Identity</span>
                                             <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
                                         </legend>
 
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_name">
+                                        <div class="vsaq-item" data-vsaq-container-for="SolutionName">
                                             <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_name">
+                                                <label class="vsaq-label-text" for="SolutionName">
                                                     Name
                                                 </label>
                                             </div>
-                                            <asp:TextBox runat="server" ID="TextBox5" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                            <asp:TextBox runat="server" ID="SolutionNameTextBox" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
                                             <p></p>
                                         </div>
 
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_name">
+                                        <div class="vsaq-item" data-vsaq-container-for="SolutionVersion">
                                             <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_name">
+                                                <label class="vsaq-label-text" for="SolutionVersion">
                                                     Version
                                                 </label>
                                             </div>
-                                            <asp:TextBox runat="server" ID="TextBox7" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
+                                            <asp:TextBox runat="server" ID="SolutionVersionTextBox" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
                                             <p></p>
                                         </div>
 
                                         <!-- Use Case Checklist -->
-                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
+                                        <div class="vsaq-item" data-vsaq-container-for="SolutionUseCase">
                                             <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="use_case">
+                                                <label class="vsaq-label-text" for="SolutionUseCase">
                                                     Use Case Matches (Click all that apply)
                                                 </label>
                                                 <div class="vsaq-checkbox-item">
-                                                    <asp:CheckBoxList ID="checkboxlist1" RepeatColumns="2" RepeatLayoput="Flow" runat="server">
-                                                        <asp:ListItem Value="AEP" Text="Advanced Endpoint Protection (AEP)"></asp:ListItem>
-                                                        <asp:ListItem Value="Protect" Text="Pre-Execution Protection"></asp:ListItem>
-                                                        <asp:ListItem Value="EDR" Text="Post-Execution Protection"></asp:ListItem>
-                                                        <asp:ListItem Value="Other" Text="Other"></asp:ListItem>
-                                                    </asp:CheckBoxList>
+                                                    <asp:CheckBoxList ID="SolutionUseCaseCheckBox" RepeatColumns="2" RepeatLayoput="Flow" runat="server"></asp:CheckBoxList>
                                                 </div>
                                             </div>
                                         </div>
-
-                                    </fieldset>
-
-                                    <fieldset class="vsaq-item vsaq-block">
-                                        <legend>
-                                            <span class="vsaq-label-text" id="text">Business Viability</span>
-                                            <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
-                                        </legend>
-
-                                        <!-- Yes no checkbox? -->
-                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
-                                            <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="use_case">
-                                                    Demonstrated customer base similar to new customer?
-                                                </label>
-                                                <div class="vsaq-radio-item">
-                                                    <asp:RadioButtonList ID="RadioBtn1" RepeatDirection="Horizontal" runat="server">
-                                                        <asp:ListItem Value="CustBaseYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="CustBaseNo" Text="No"></asp:ListItem>
-                                                    </asp:RadioButtonList>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
-                                            <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="use_case">
-                                                    Are the existing customers referenceable?
-                                                </label>
-                                                <div class="vsaq-radio-item">
-                                                    <asp:RadioButtonList ID="RadioButtonList1" RepeatDirection="Horizontal" runat="server">
-                                                        <asp:ListItem Value="CustReferenceableYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="CustReferenceableNo" Text="No"></asp:ListItem>
-                                                    </asp:RadioButtonList>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="vsaq-item" data-vsaq-container-for="use_case">
-                                            <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="use_case">
-                                                    Are they using this solution in production?
-                                                </label>
-                                                <div class="vsaq-radio-item">
-                                                    <asp:RadioButtonList ID="RadioButtonList2" RepeatDirection="Horizontal" runat="server">
-                                                        <asp:ListItem Value="SolInProductionYes" Text="Yes"></asp:ListItem>
-                                                        <asp:ListItem Value="SolInProductionNo" Text="No"></asp:ListItem>
-                                                    </asp:RadioButtonList>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="vsaq-item" data-vsaq-container-for="customer_name">
-                                            <div class="vsaq-question-title">
-                                                <label class="vsaq-label-text" for="customer_name">
-                                                    If so, how big is the deployment?
-                                               
-                                                </label>
-                                            </div>
-                                            <asp:TextBox runat="server" ID="TextBox8" Columns="30" MaxLength="50" Height="20px" Width="325px"></asp:TextBox>
-                                            <p></p>
+                                        <div style="color: #FF0000; font-size: medium">
+                                            <asp:Literal ID="err" runat="server"></asp:Literal>
                                         </div>
                                     </fieldset>
-                                    <asp:Button ID="BtnQuest1" Text="Submit" runat="server"  />
+                                    <asp:Button ID="VendorInfoSubmitButton" Text="Submit" runat="server" OnClick="VendorInfoSubmitButton_Click" />
                                 </fieldset>
                             </div>
                         </form>
-
                     </div>
                 </div>
             </div>
