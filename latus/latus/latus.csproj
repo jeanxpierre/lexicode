@@ -71,8 +71,10 @@
     <Content Include="CustQuestionnaire3.aspx" />
     <Content Include="CustInformation.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="GridViewTest.aspx" />
     <Content Include="maia.css" />
     <Content Include="packages.config" />
+    <Content Include="WorkbenchTest.aspx" />
     <None Include="Properties\PublishProfiles\latus=web.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -117,6 +119,14 @@
     <Compile Include="CustInformation.aspx.designer.cs">
       <DependentUpon>CustInformation.aspx</DependentUpon>
     </Compile>
+    <Compile Include="func.cs" />
+    <Compile Include="GridViewTest.aspx.cs">
+      <DependentUpon>GridViewTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridViewTest.aspx.designer.cs">
+      <DependentUpon>GridViewTest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="sql.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -141,6 +151,13 @@
     </Compile>
     <Compile Include="VendorInformation.aspx.designer.cs">
       <DependentUpon>VendorInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkbenchTest.aspx.cs">
+      <DependentUpon>WorkbenchTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkbenchTest.aspx.designer.cs">
+      <DependentUpon>WorkbenchTest.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>

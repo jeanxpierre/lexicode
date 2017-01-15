@@ -27,11 +27,11 @@ namespace latus
             Guid CustomerID = new Guid();
             Guid.TryParse(ID, out CustomerID);
 
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 77, "4", "", "0", null, Q1_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 78, "4", "", "0", null, Q2_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 79, "4", "", "0", null, Q3_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 80, "4", "", "0", null, Q4_WeightTextBox.Text));
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 81, "4", "", "0", null, Q5_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 77, "4", "", Q1_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 78, "4", "", Q2_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 79, "4", "", Q3_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 80, "4", "", Q4_WeightTextBox.Text));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 81, "4", "", Q5_WeightTextBox.Text));
 
             List<string> SecurityMeasures = SecurityMeasureCheckBox.Items.Cast<ListItem>()
                 .Where(li => li.Selected)
@@ -44,7 +44,7 @@ namespace latus
                 SecurityMeasureString = SecurityMeasureString+ li + ", ";
             }
 
-            QuestionnaireAnswers.Add(new Answer(CustomerID, 82, "4", SecurityMeasureString, "0", null, "0"));
+            QuestionnaireAnswers.Add(new Answer(CustomerID, 82, "4", SecurityMeasureString, "0"));
 
             List<Answer> FinalAnswerList = new List<Answer>();
             foreach (Answer Answer in QuestionnaireAnswers)
@@ -59,7 +59,7 @@ namespace latus
             sql.updateQuestionnaire3Answers(ListQuestionnaire3Answers, out error);
             err.Text = error;
 
-            //Response.Redirect("/location?id=" + CustomerID.ToString());
+            Response.Redirect("/WorkbenchTest.aspx?id=" + CustomerID.ToString());
         }
     }
 }

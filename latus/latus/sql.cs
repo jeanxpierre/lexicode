@@ -259,8 +259,6 @@ namespace latus
                                                                         QuestionId,
                                                                         SimpleAnswerId,
                                                                         AnswerDesc,
-                                                                        ScorableBoolId,
-                                                                        Score,
                                                                         Weight)
                                             VALUES (
                                                                         @AnswerId,
@@ -268,8 +266,6 @@ namespace latus
                                                                         @QuestionId,
                                                                         @SimpleAnswerId,
                                                                         @AnswerDesc,
-                                                                        @ScorableBoolId,
-                                                                        @Score,
                                                                         @Weight)
                                     END";
 
@@ -278,10 +274,6 @@ namespace latus
                         cmd.Parameters.Add("@QuestionId", SqlDbType.Int);
                         cmd.Parameters.Add("@SimpleAnswerId", SqlDbType.Int);
                         cmd.Parameters.Add("@AnswerDesc", SqlDbType.NVarChar, 128);
-                        cmd.Parameters.Add("@ScorableBoolId", SqlDbType.Int);
-                        cmd.Parameters.Add("@Score", SqlDbType.Decimal);
-                        cmd.Parameters["@Score"].Precision = 3;
-                        cmd.Parameters["@Score"].Scale = 1;
                         cmd.Parameters.Add("@Weight", SqlDbType.Decimal);
                         cmd.Parameters["@Weight"].Precision = 3;
                         cmd.Parameters["@Weight"].Scale = 1;
@@ -297,8 +289,6 @@ namespace latus
                                 cmd.Parameters["@QuestionId"].Value = Answer.QuestionId;
                                 cmd.Parameters["@SimpleAnswerId"].Value = Answer.SimpleAnswerId;
                                 cmd.Parameters["@AnswerDesc"].Value = Answer.AnswerDesc;
-                                cmd.Parameters["@ScorableBoolId"].Value = Answer.ScorableBoolId;
-                                cmd.Parameters["@Score"].Value = DBNull.Value;
                                 cmd.Parameters["@Weight"].Value = Answer.Weight; 
                                 cmd.ExecuteNonQuery();
                             }
@@ -372,8 +362,6 @@ namespace latus
                                                                         QuestionId,
                                                                         SimpleAnswerId,
                                                                         AnswerDesc,
-                                                                        ScorableBoolId,
-                                                                        Score,
                                                                         Weight)
                                             VALUES (
                                                                         @AnswerId,
@@ -381,8 +369,6 @@ namespace latus
                                                                         @QuestionId,
                                                                         @SimpleAnswerId,
                                                                         @AnswerDesc,
-                                                                        @ScorableBoolId,
-                                                                        @Score,
                                                                         @Weight)
                                     END";
 
@@ -391,10 +377,6 @@ namespace latus
                         cmd.Parameters.Add("@QuestionId", SqlDbType.Int);
                         cmd.Parameters.Add("@SimpleAnswerId", SqlDbType.Int);
                         cmd.Parameters.Add("@AnswerDesc", SqlDbType.NVarChar, 128);
-                        cmd.Parameters.Add("@ScorableBoolId", SqlDbType.Int);
-                        cmd.Parameters.Add("@Score", SqlDbType.Decimal);
-                        cmd.Parameters["@Score"].Precision = 3;
-                        cmd.Parameters["@Score"].Scale = 1;
                         cmd.Parameters.Add("@Weight", SqlDbType.Decimal);
                         cmd.Parameters["@Weight"].Precision = 3;
                         cmd.Parameters["@Weight"].Scale = 1;
@@ -410,8 +392,6 @@ namespace latus
                                 cmd.Parameters["@QuestionId"].Value = Answer.QuestionId;
                                 cmd.Parameters["@SimpleAnswerId"].Value = Answer.SimpleAnswerId;
                                 cmd.Parameters["@AnswerDesc"].Value = Answer.AnswerDesc;
-                                cmd.Parameters["@ScorableBoolId"].Value = Answer.ScorableBoolId;
-                                cmd.Parameters["@Score"].Value = DBNull.Value;
                                 cmd.Parameters["@Weight"].Value = Answer.Weight;
                                 cmd.ExecuteNonQuery();
                             }
@@ -448,8 +428,6 @@ namespace latus
                                                                         QuestionId,
                                                                         SimpleAnswerId,
                                                                         AnswerDesc,
-                                                                        ScorableBoolId,
-                                                                        Score,
                                                                         Weight)
                                             VALUES (
                                                                         @AnswerId,
@@ -457,8 +435,6 @@ namespace latus
                                                                         @QuestionId,
                                                                         @SimpleAnswerId,
                                                                         @AnswerDesc,
-                                                                        @ScorableBoolId,
-                                                                        @Score,
                                                                         @Weight)
                                     END";
 
@@ -467,10 +443,6 @@ namespace latus
                         cmd.Parameters.Add("@QuestionId", SqlDbType.Int);
                         cmd.Parameters.Add("@SimpleAnswerId", SqlDbType.Int);
                         cmd.Parameters.Add("@AnswerDesc", SqlDbType.NVarChar, 128);
-                        cmd.Parameters.Add("@ScorableBoolId", SqlDbType.Int);
-                        cmd.Parameters.Add("@Score", SqlDbType.Decimal);
-                        cmd.Parameters["@Score"].Precision = 3;
-                        cmd.Parameters["@Score"].Scale = 1;
                         cmd.Parameters.Add("@Weight", SqlDbType.Decimal);
                         cmd.Parameters["@Weight"].Precision = 3;
                         cmd.Parameters["@Weight"].Scale = 1;
@@ -486,8 +458,6 @@ namespace latus
                                 cmd.Parameters["@QuestionId"].Value = Answer.QuestionId;
                                 cmd.Parameters["@SimpleAnswerId"].Value = Answer.SimpleAnswerId;
                                 cmd.Parameters["@AnswerDesc"].Value = Answer.AnswerDesc;
-                                cmd.Parameters["@ScorableBoolId"].Value = Answer.ScorableBoolId;
-                                cmd.Parameters["@Score"].Value = DBNull.Value;
                                 cmd.Parameters["@Weight"].Value = Answer.Weight;
                                 cmd.ExecuteNonQuery();
                             }
@@ -503,5 +473,442 @@ namespace latus
                 }
             }
         }
+
+        public static List<int> getCustomerUseCase(Guid CustomerId, out string error)
+        {
+            error = "";
+            List<int> UseCaseList = new List<int>();
+
+            using (SqlConnection conn = new SqlConnection(ds.latusdb))
+            {
+                using (SqlCommand cmd = conn.CreateCommand())
+                {
+                    try
+                    {
+
+                        cmd.CommandText = "SELECT UseCaseId FROM CustSolUseCaseLink WHERE CustomerSolutionId = @CustomerId";
+                        cmd.Parameters.Add("CustomerId", SqlDbType.UniqueIdentifier);
+
+                        cmd.CommandType = CommandType.Text;
+
+
+                        conn.Open();
+
+                        cmd.Parameters["@CustomerId"].Value = CustomerId;
+                        using (SqlDataReader dr = cmd.ExecuteReader())
+                        {
+                            while(dr.Read())
+                            {
+                                UseCaseList.Add((int)dr["UseCaseId"]);
+                            }
+                        }
+
+                        conn.Close();
+                        return UseCaseList;
+                    }
+                    catch (Exception Ex)
+                    {
+                        error = Ex.ToString();
+                        return UseCaseList;
+                    }
+
+                }
+            }
+        }
+
+        public static Dictionary<int, String> getSimpleAnswers(out string error)
+        {
+            error = "";
+            Dictionary<int, String> SimpleAnswers = new Dictionary<int, string>();
+
+            using (SqlConnection conn = new SqlConnection(ds.latusdb))
+            {
+                using (SqlCommand cmd = conn.CreateCommand())
+                {
+                    try
+                    {
+                        cmd.CommandText = "SELECT * FROM SimpleAnswer";
+                        cmd.CommandType = CommandType.Text;
+                        conn.Open();
+
+                        using (SqlDataReader dr = cmd.ExecuteReader())
+                        {
+                            while (dr.Read())
+                            {
+                                int SAId = func.ConvertDBint(dr["SimpleAnswerId"]);
+                                string SA = func.ConvertDBstring(dr["SimpleAnswer"]);
+                                SimpleAnswers.Add(SAId, SA);
+                            }
+                        }
+
+                        conn.Close();
+
+                        return SimpleAnswers;
+                    }
+                    catch (Exception Ex)
+                    {
+                        error = Ex.ToString();
+                        return SimpleAnswers;
+                    }
+
+                }
+            }
+
+        }
+
+        public static List<int> getUseCaseQuestionIds(List<int> UseCaseIds, out string error)
+        {
+            error = "";
+            List<int> QuestionIds = new List<int>();
+
+            using (SqlConnection conn = new SqlConnection(ds.latusdb))
+            {
+                using (SqlCommand cmd = conn.CreateCommand())
+                {
+                    try
+                    {
+                        foreach(int UseCaseId in UseCaseIds)
+                        {
+                            cmd.CommandText = "SELECT QuestionId FROM QuestionTagLink WHERE TagId = @UseCaseId";
+                            cmd.Parameters.Add("UseCaseId", SqlDbType.Int);
+
+                            cmd.CommandType = CommandType.Text;
+
+
+                            conn.Open();
+
+                            cmd.Parameters["@UseCaseId"].Value = UseCaseId;
+                            using (SqlDataReader dr = cmd.ExecuteReader())
+                            {
+                                while (dr.Read())
+                                {
+                                    QuestionIds.Add((int)dr["QuestionId"]);
+                                }
+                            }
+
+                            conn.Close();
+                        }
+                        
+                        return QuestionIds;
+                    }
+                    catch (Exception Ex)
+                    {
+                        error = Ex.ToString();
+                        return QuestionIds;
+                    }
+
+                }
+            }
+        }
+
+        public static List<Question> getSolutionQuestionsFromId(List<int> QuestionIds, out string error)
+        {
+            error = "";
+            List<Question> Questions = new List<Question>();
+
+            using (SqlConnection conn = new SqlConnection(ds.latusdb))
+            {
+                using (SqlCommand cmd = conn.CreateCommand())
+                {
+                    try
+                    {
+                        foreach (int QuestionId in QuestionIds)
+                        {
+                            cmd.CommandText = "SELECT Question FROM Question WHERE QuestionId = @QuestionId AND QuestionnaireId = 4";
+                            cmd.Parameters.Add("QuestionId", SqlDbType.Int);
+
+                            cmd.CommandType = CommandType.Text;
+
+                            conn.Open();
+                            cmd.Parameters["@QuestionId"].Value = QuestionId;
+
+                            using (SqlDataReader dr = cmd.ExecuteReader())
+                            {
+                                while (dr.Read())
+                                {
+                                    Questions.Add(new latus.Question((int)dr["QuestionId"], (string)dr["Question"]));
+                                }
+                            }
+
+                            conn.Close();
+                        }
+
+                        return Questions;
+                    }
+                    catch (Exception Ex)
+                    {
+                        error = Ex.ToString();
+                        return Questions;
+                    }
+
+                }
+            }
+        }
+
+        public static List<Question> getSolutionQuestions(out string error)
+        {
+            error = "";
+            List<Question> Questions = new List<Question>();
+
+            using (SqlConnection conn = new SqlConnection(ds.latusdb))
+            {
+                using (SqlCommand cmd = conn.CreateCommand())
+                {
+                    try
+                    {
+                        cmd.CommandText = "SELECT Question, QuestionId FROM Question WHERE QuestionnaireId = 4";
+                        cmd.CommandType = CommandType.Text;
+                        conn.Open();
+
+                        using (SqlDataReader dr = cmd.ExecuteReader())
+                        {
+                            while (dr.Read())
+                            {
+                                Questions.Add(new Question((int)dr["QuestionId"], (string)dr["Question"]));
+                            }
+                        }
+
+                        conn.Close();
+
+                        return Questions;
+                    }
+                    catch (Exception Ex)
+                    {
+                        error = Ex.ToString();
+                        return Questions;
+                    }
+
+                }
+            }
+        }
+
+        public static List<CustomerInfo> getCustomerInfo(out string error)
+        {
+            error = "";
+            List<CustomerInfo> CustomerInfo = new List<CustomerInfo>();
+
+            using (SqlConnection conn = new SqlConnection(ds.latusdb))
+            {
+                using (SqlCommand cmd = conn.CreateCommand())
+                {
+                    try
+                    {
+                        cmd.CommandText = "SELECT * FROM CustomerInfo";
+                        cmd.CommandType = CommandType.Text;
+                        conn.Open();
+
+                        using (SqlDataReader dr = cmd.ExecuteReader())
+                        {
+                            while (dr.Read())
+                            {
+                                Guid TempCustomerId = (Guid)(dr["CustomerId"] != null ? dr["CustomerId"] : Guid.NewGuid()); 
+                                string TempCustomerName = (string)(dr["CustomerName"] != null ? dr["CustomerName"] : string.Empty); 
+                                int TempIndustryId = (int)(dr["CustomerIndustryId"] != null ? dr["CustomerIndustryId"] : 0); 
+                                string TempHeadquarters = (string)(dr["CustomerHeadquarters"] != null ? dr["CustomerHeadquarters"] : string.Empty); 
+                                int TempGeographyId = (int)(dr["CustomerGeographyId"] != null ? dr["CustomerGeographyId"] : 0); 
+                                int TempNumEmployeesId = (int)(dr["CustomerNumEmployeesId"] != null ? dr["CustomerNumEmployeesId"] : 0); 
+                                CustomerInfo.Add(new CustomerInfo(TempCustomerId, TempCustomerName, TempIndustryId, TempHeadquarters, TempGeographyId, TempNumEmployeesId));
+                            }
+                        }
+
+                        conn.Close();
+
+                        return CustomerInfo;
+                    }
+                    catch (Exception Ex)
+                    {
+                        error = Ex.ToString();
+                        return CustomerInfo;
+                    }
+
+                }
+            }
+        }
+
+        public static List<VendorInfo> getVendorInfo(out string error)
+        {
+            error = "";
+            List<VendorInfo> VendorInfo = new List<VendorInfo>();
+
+            using (SqlConnection conn = new SqlConnection(ds.latusdb))
+            {
+                using (SqlCommand cmd = conn.CreateCommand())
+                {
+                    try
+                    {
+                        cmd.CommandText = "SELECT * FROM VendorInfo";
+                        cmd.CommandType = CommandType.Text;
+                        conn.Open();
+
+                        using (SqlDataReader dr = cmd.ExecuteReader())
+                        {
+                            while (dr.Read())
+                            {
+                                Guid TempVendorId = (Guid)(dr["VendorId"] != null ? dr["VendorId"] : Guid.Empty);
+                                string TempVendorName = (string)(dr["VendorName"] != null ? dr["VendorName"] : string.Empty);
+                                string TempVendorFounded = (string)(dr["VendorFounded"] != null ? dr["VendorFounded"] : string.Empty);
+                                string TempVendorHeadquarters = (string)(dr["VendorHeadquarters"] != null ? dr["VendorHeadquarters"] : string.Empty);
+                                string TempVendorPublicPrivate = (string)(dr["VendorPublicPrivate"] != null ? dr["VendorPublicPrivate"] : string.Empty);
+                                string TempVendorNumEmployees = (string)(dr["VendorNumEmployees"] != null ? dr["VendorNumEmployees"] : string.Empty);
+                                VendorInfo.Add(new VendorInfo(TempVendorId, TempVendorName, TempVendorFounded, TempVendorHeadquarters, TempVendorPublicPrivate, TempVendorNumEmployees));
+                            }
+                        }
+
+                        conn.Close();
+
+                        return VendorInfo;
+                    }
+                    catch (Exception Ex)
+                    {
+                        error = Ex.ToString();
+                        return VendorInfo;
+                    }
+
+                }
+            }
+        }
+
+        public static List<SolutionInfo> getSolutionInfo(out string error)
+        {
+            error = "";
+            List<SolutionInfo> SolutionInfo = new List<SolutionInfo>();
+
+            using (SqlConnection conn = new SqlConnection(ds.latusdb))
+            {
+                using (SqlCommand cmd = conn.CreateCommand())
+                {
+                    try
+                    {
+                        cmd.CommandText = "SELECT * FROM SolutionInfo";
+                        cmd.CommandType = CommandType.Text;
+                        conn.Open();
+
+                        using (SqlDataReader dr = cmd.ExecuteReader())
+                        {
+                            while (dr.Read())
+                            {
+                                Guid SolutionId = (Guid)(dr["SolutionId"] != null ? dr["SolutionId"] : Guid.Empty);
+                                Guid VendorId = (Guid)(dr["VendorId"] != null ? dr["VendorId"] : Guid.Empty);
+                                string SolutionName = (string)(dr["SolutionName"] != null ? dr["SolutionName"] : string.Empty);
+                                string temp = (dr["SolutionVersion"].ToString() != null ? dr["SolutionVersion"].ToString() : "0");
+                                float SolutionVersion = float.Parse(temp, System.Globalization.CultureInfo.InvariantCulture);
+                                //float SolutionVersion = (float)temp;
+                                SolutionInfo.Add(new SolutionInfo(SolutionId, VendorId, SolutionName, SolutionVersion));
+                            }
+                        }
+
+                        conn.Close();
+
+                        return SolutionInfo;
+                    }
+                    catch (Exception Ex)
+                    {
+                        error = Ex.ToString();
+                        return SolutionInfo;
+                    }
+
+                }
+            }
+        }
+
+        public static Answer getSolutionAnswer(Guid SolutionId, int QuestionId, out string error)
+        {
+            error = "";
+            Answer newAnswer = new Answer();
+
+            using (SqlConnection conn = new SqlConnection(ds.latusdb))
+            {
+                using (SqlCommand cmd = conn.CreateCommand())
+                {
+                    try
+                    {
+                        cmd.CommandText = "SELECT * FROM Answer WHERE CustomerOrSolutionId = @SolutionId AND QuestionId = @QuestionId";
+                        cmd.Parameters.Add("@SolutionId", SqlDbType.UniqueIdentifier);
+                        cmd.Parameters.Add("@QuestionId", SqlDbType.Int);
+                        cmd.CommandType = CommandType.Text;
+
+                        conn.Open();
+
+                        cmd.Parameters["@SolutionId"].Value = SolutionId;
+                        cmd.Parameters["@QuestionId"].Value = QuestionId;
+
+                        using (SqlDataReader dr = cmd.ExecuteReader())
+                        {
+                            while (dr.Read())
+                            {
+                                Guid TempAnswerId = func.ConvertDBGuid(dr["AnswerId"]);
+                                int TempSimpleAnswerId = func.ConvertDBint(dr["SimpleAnswerId"]);
+                                string TempAnswerDesc = func.ConvertDBstring(dr["AnswerDesc"]);
+                                float TempWeight = func.ConvertDBfloat(dr["Weight"]);
+                                newAnswer = new Answer(TempAnswerId, SolutionId, QuestionId, TempSimpleAnswerId, TempAnswerDesc, TempWeight);
+                            }
+                        }
+
+                        conn.Close();
+
+                        return newAnswer;
+                    }
+                    catch (Exception Ex)
+                    {
+                        error = Ex.ToString();
+                        return newAnswer;
+                    }
+
+                }
+            }
+        }
+
+        public static List<List<string>> getAllSolutionAnswerDesc(List<Guid> SolutionIds, List<int> QuestionIds, out string error)
+        {
+            error = "";
+            List<List<string>> AnswerDescriptions = new List<List<string>>();
+
+            using (SqlConnection conn = new SqlConnection(ds.latusdb))
+            {
+                using (SqlCommand cmd = conn.CreateCommand())
+                {
+                    try
+                    {
+                        cmd.CommandText = "SELECT * FROM Answer WHERE CustomerOrSolutionId = @SolutionId AND QuestionId = @QuestionId";
+                        cmd.Parameters.Add("@SolutionId", SqlDbType.UniqueIdentifier);
+                        cmd.Parameters.Add("@QuestionId", SqlDbType.Int);
+                        cmd.CommandType = CommandType.Text;
+
+
+                        foreach(Guid SolutionId in SolutionIds)
+                        {
+                            List<string> SolutionDescList = new List<string>();
+
+                            foreach(int QuestionId in QuestionIds)
+                            {
+                                conn.Open();
+                                cmd.Parameters["@SolutionId"].Value = SolutionId;
+                                cmd.Parameters["@QuestionId"].Value = QuestionId;
+                                using (SqlDataReader dr = cmd.ExecuteReader())
+                                {
+                                    while (dr.Read())
+                                    {
+                                       SolutionDescList.Add((string)(dr["AnswerDesc"] != null ? dr["AnswerDesc"] : string.Empty));
+                                    }
+                                }
+
+                                conn.Close();
+                            }
+                            AnswerDescriptions.Add(SolutionDescList);
+                        }
+
+                        return AnswerDescriptions;
+                    }
+                    catch (Exception Ex)
+                    {
+                        error = Ex.ToString();
+                        return AnswerDescriptions;
+                    }
+
+                }
+            }
+        }
+        //Returns in a list of lists where returnedAnswer[i][j] corresponds with i = Solution, j = QuestionId
+        //Needs Reworking
     }
 }
