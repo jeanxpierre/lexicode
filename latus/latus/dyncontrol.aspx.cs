@@ -19,14 +19,12 @@ namespace latus
 
             // When adding a control, set the ID property
 
-            placeHolder1.Controls.Add(tb);
+            dynControl.Controls.Add(tb);
             tb.ID = "dynTextBox";
 
-            placeHolder1.Controls.Add(btn);
+            dynControl.Controls.Add(btn);
             btn.ID = "dynButton1";
 
-            placeHolder1.Controls.Add(btn);
-            btn.ID = "dynButton2";
 
             UserControl dq = new UserControl();
 
@@ -34,8 +32,8 @@ namespace latus
             {
                 //dq = LoadControl(); // loading a Dynamic Data Field page *.ascx
                 dq.ID = string.Concat("dq", "database data");
-                dynamicControls.Controls.Add(dq);
-                dynamicControls.Controls.Add(new LiteralControl("<br /><br />"));
+                dynControl.Controls.Add(dq);
+                dynControl.Controls.Add(new LiteralControl("<br /><br />"));
             }
 
         }
@@ -52,15 +50,13 @@ namespace latus
                 lbl.Text = DateTime.Now.ToString();
 
                 // At some point later in the page lifecycle reference the dynamic TextBox
-                TextBox dTB = (TextBox)placeHolder1.FindControl("dynTextBox");
+                TextBox dTB = (TextBox)dynControl.FindControl("dynTextBox");
                 dTB.Text = "FoundYou";
                 dTB.BackColor = System.Drawing.Color.Red; // Initial BackColor
 
-                Button dBtn1 = (Button)placeHolder1.FindControl("dynButton1");
-                dBtn1.Text = "Click Me1";
+                Button dBtn1 = (Button)dynControl.FindControl("dynButton1");
+                dBtn1.Text = "Click Me";
 
-                Button dBtn2 = (Button)placeHolder1.FindControl("dynButton2");
-                dBtn2.Text = "Click Me2";
                 // it is important to have a unique ID for each control, this can be pulled out of the database via the table's unique primary key field
             }
 

@@ -9,10 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:Placeholder id="dynamicControls" runat="server" ></asp:Placeholder>
-    </div>
-    <div>
-        <asp:Placeholder id="placeHolder1" runat="server" ></asp:Placeholder>
+        <asp:Placeholder id="dynControl" runat="server" ></asp:Placeholder>
     </div>
     </form>
 </body>
