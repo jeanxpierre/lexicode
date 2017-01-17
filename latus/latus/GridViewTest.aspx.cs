@@ -80,8 +80,7 @@ namespace latus
                     _gridView.DataBind();
 
                     // Write out a history if the event
-                    /*this.Message.Text += "Single clicked GridView row at index " + _rowIndex.ToString()
-                        + " on column index " + _columnIndex + "<br />";*/
+                    this.Message.Text += "Single clicked GridView row at index " + _rowIndex.ToString() + " on column index " + _columnIndex + "<br />";
 
                     // Get the display control for the selected cell and make it invisible
                     Control _displayControl = _gridView.Rows[_rowIndex].Cells[_columnIndex].Controls[1];

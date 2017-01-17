@@ -11,6 +11,9 @@
     <div>
         <asp:Placeholder id="dynControl" runat="server" ></asp:Placeholder>
     </div>
+        <div>
+            <asp:Label ID="Message" runat="server"></asp:Label>
+        </div>
     </form>
 </body>
 </html>
