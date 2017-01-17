@@ -14,6 +14,8 @@ namespace latus
     {
         static string ID = string.Empty;
         string error = string.Empty;
+        List<Guid> SolutionIds = new List<Guid>();
+        List<Question> Questions = new List<Question>();
 
         private const int _firstEditCellIndex = 2;
 
@@ -64,6 +66,7 @@ namespace latus
                 Questions = sql.getSolutionQuestions(out error);
                 err.Text = error;
             }
+            this.Questions = Questions;
 
             //Add columns based on Solution Names and Retreive SolutionIds
             foreach (SolutionInfo siItem in SolutionInfo)
@@ -71,6 +74,7 @@ namespace latus
                 WorkbenchTable.Columns.Add(siItem.SolutionName, typeof(string));
                 SolutionIds.Add(siItem.SolutionId);
             }
+            this.SolutionIds = SolutionIds;
 
             //Retreive all previously logged answers from Solutions
             List<List<string>> AnswerDescriptions = sql.getAllSolutionAnswerDesc(SolutionIds, QuestionIds, out error);
@@ -321,6 +325,7 @@ namespace latus
         protected void WorkbenchGV_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
             this.Message.Text = "Row is being updated.";
+            
             /*
             if (e.RowIndex > -1)
             {
@@ -339,25 +344,31 @@ namespace latus
                     // Update Simple Answer Control
                     Label SimpleAnswerLabel = (Label)WorkbenchGV.Rows[_rowIndex].Cells[_columnIndex].FindControl("SimpleAnswerLabel" + ControlEnding);
                     RadioButtonList SimpleAnswerRadio = (RadioButtonList)WorkbenchGV.Rows[_rowIndex].Cells[_columnIndex].FindControl("SimpleAnswerRadio" + ControlEnding);
-                    SimpleAnswerLabel.Text = SimpleAnswerRadio.SelectedValue;
-                    //This may give value not text.
+                    SimpleAnswerLabel.Text = SimpleAnswerRadio.SelectedItem.ToString();
+                    string SimpleAnswerId = SimpleAnswerRadio.SelectedValue;
 
                     //Create Answer Description Control
                     Label AnswerDescLabel = (Label)WorkbenchGV.Rows[_rowIndex].Cells[_columnIndex].FindControl("AnswerDescLabel" + ControlEnding);
                     TextBox AnswerDescTextbox = (TextBox)WorkbenchGV.Rows[_rowIndex].Cells[_columnIndex].FindControl("AnswerDescTextbox" + ControlEnding);
                     AnswerDescLabel.Text = AnswerDescTextbox.Text;
+                    string AnswerDesc = AnswerDescTextbox.Text;
 
                     //Create Weight Description Control
                     Label WeightLabel = (Label)WorkbenchGV.Rows[_rowIndex].Cells[_columnIndex].FindControl("WeightLabel" + ControlEnding);
                     TextBox WeightTextbox = (TextBox)WorkbenchGV.Rows[_rowIndex].Cells[_columnIndex].FindControl("WeightTextbox" + ControlEnding);
                     WeightLabel.Text = WeightTextbox.Text;
+                    string Weight = WeightTextbox.Text;
 
                     //Create Score Description Control
                     Label ScoreLabel = (Label)WorkbenchGV.Rows[_rowIndex].Cells[_columnIndex].FindControl("ScoreLabel" + ControlEnding);
                     TextBox ScoreTextbox = (TextBox)WorkbenchGV.Rows[_rowIndex].Cells[_columnIndex].FindControl("ScoreTextbox" + ControlEnding);
                     ScoreLabel.Text = ScoreTextbox.Text;
+                    string Score = ScoreTextbox.Text;
 
+                    //Send Answer to DB 
+                    Answer Answer = new Answer(SolutionIds[_columnIndex - 2], Questions[_rowIndex].QuestionId, SimpleAnswerId, AnswerDesc, Weight, Score, "false");
                 }
+                
             }
             */
 
