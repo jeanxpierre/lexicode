@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WorkbenchTest.aspx.cs" Inherits="latus.WorkbenchTest" EnableEventValidation = "false" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WorkbenchTest.aspx.cs" Inherits="latus.WorkbenchTest" EnableEventValidation = "false" MaintainScrollPositionOnPostback="true" %>
 
 <!DOCTYPE html>
 
@@ -42,10 +42,12 @@
                                             <a name="anchor123" class="vsaq-block-link" href="anchor123">🔗</a>
                                         </legend>
                                         <div>
-                                            <asp:GridView ID="WorkbenchGV" OnRowDataBound="WorkbenchGV_RowDataBound" OnRowCommand="WorkbenchGV_RowCommand"
+                                            <asp:GridView ID="WorkbenchGV" OnRowDataBound="WorkbenchGV_RowDataBound" OnRowCommand="WorkbenchGV_RowCommand" OnRowUpdating="WorkbenchGV_RowUpdating"
                                                 runat="server">
+                                                <Columns>
+                                                    <asp:ButtonField Text="SingleClick" CommandName="SingleClick" Visible="false"/>
+                                                </Columns>
                                             </asp:GridView>
-                                            <asp:LinkButton ID="lnkDummy" runat="server"></asp:LinkButton>
                                             <asp:Literal ID="Message" runat="server"></asp:Literal>
                                         </div>
                                         <div style="color: #FF0000; font-size: medium">
