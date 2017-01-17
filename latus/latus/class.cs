@@ -127,11 +127,14 @@ namespace latus
     {
         public int QuestionId { get; set; }
         public string QuestionText { get; set; }
+        public int QuestionCategoryId { get; set; }
 
-        public Question(int QuestionId, string QuestionText)
+
+        public Question(int QuestionId, string QuestionText, int QuestionCategoryId)
         {
             this.QuestionId = QuestionId;
             this.QuestionText = QuestionText;
+            this.QuestionCategoryId = QuestionCategoryId;
         }
     }
     public class Answer
@@ -142,11 +145,48 @@ namespace latus
         public int SimpleAnswerId { get; set; }
         public string AnswerDesc { get; set; }
         public double Weight { get; set; }
+        public double Score { get; set; }
+        public Boolean KnowledgeBaseBoolean { get; set; }
 
+        //No Score or KnowledgeBase
         public Answer(Guid CustomerOrSolutionId, int QuestionId, string SimpleAnswer, string AnswerDesc, string Weight)
         {
             int SimpleAnswerIdTemp = 0;
             double WeightTemp = 0.0;
+
+            this.AnswerId = Guid.NewGuid();
+            this.CustomerOrSolutionId = CustomerOrSolutionId;
+            this.QuestionId = QuestionId;
+            int.TryParse(SimpleAnswer, out SimpleAnswerIdTemp);
+            this.SimpleAnswerId = SimpleAnswerIdTemp;
+            this.AnswerDesc = AnswerDesc;
+
+            if (Weight != null)
+            {
+                double.TryParse(Weight, out WeightTemp);
+                this.Weight = WeightTemp;
+            }
+        }
+
+        //No Score or KnowledgeBase
+        public Answer(Guid AnswerId, Guid CustomerOrSolutionId, int QuestionId, int SimpleAnswerId, string AnswerDesc, double Weight)
+        {
+
+            this.AnswerId = AnswerId;
+            this.CustomerOrSolutionId = CustomerOrSolutionId;
+            this.QuestionId = QuestionId;
+            this.SimpleAnswerId = SimpleAnswerId;
+            this.AnswerDesc = AnswerDesc;
+            this.Weight = Weight;
+
+        }
+
+        public Answer(Guid CustomerOrSolutionId, int QuestionId, string SimpleAnswer, string AnswerDesc, string Weight, string Score, string KnowledgeBaseBoolean)
+        {
+            int SimpleAnswerIdTemp = 0;
+            double WeightTemp = 0.0;
+            double ScoreTemp = 0.0;
+            Boolean KnowledgeBaseBooleanTemp = false;
 
             this.AnswerId = Guid.NewGuid();
             this.CustomerOrSolutionId = CustomerOrSolutionId;
@@ -161,9 +201,18 @@ namespace latus
                 this.Weight = WeightTemp;
             }
 
+            if(Score != null)
+            {
+                double.TryParse(Score, out ScoreTemp);
+                this.Score = ScoreTemp;
+            }
+
+            Boolean.TryParse(KnowledgeBaseBoolean, out KnowledgeBaseBooleanTemp);
+            this.KnowledgeBaseBoolean = KnowledgeBaseBooleanTemp;
+
         }
 
-        public Answer(Guid AnswerId, Guid CustomerOrSolutionId, int QuestionId, int SimpleAnswerId, string AnswerDesc, double Weight)
+        public Answer(Guid AnswerId, Guid CustomerOrSolutionId, int QuestionId, int SimpleAnswerId, string AnswerDesc, double Weight, double Score, Boolean KnowledgeBaseBoolean)
         {
 
             this.AnswerId = AnswerId;
@@ -172,6 +221,8 @@ namespace latus
             this.SimpleAnswerId = SimpleAnswerId;
             this.AnswerDesc = AnswerDesc;
             this.Weight = Weight;
+            this.Score = Score;
+            this.KnowledgeBaseBoolean = KnowledgeBaseBoolean;
 
         }
 

@@ -238,7 +238,7 @@ namespace latus
                 }
             }
         }
-
+        //Folowing update Answers may need to include Score (null) and Knowledgebase (true?)
         public static void updateQuestionnaire1Answers(List<Questionnaire1Answers> q1, out string error)
         {
             error = "";
@@ -626,7 +626,7 @@ namespace latus
                             {
                                 while (dr.Read())
                                 {
-                                    Questions.Add(new latus.Question((int)dr["QuestionId"], (string)dr["Question"]));
+                                    Questions.Add(new latus.Question((int)dr["QuestionId"], (string)dr["Question"], (int)dr["QuestionCategoryId"]));
                                 }
                             }
 
@@ -656,7 +656,7 @@ namespace latus
                 {
                     try
                     {
-                        cmd.CommandText = "SELECT Question, QuestionId FROM Question WHERE QuestionnaireId = 4";
+                        cmd.CommandText = "SELECT * FROM Question WHERE QuestionnaireId = 4";
                         cmd.CommandType = CommandType.Text;
                         conn.Open();
 
@@ -664,7 +664,7 @@ namespace latus
                         {
                             while (dr.Read())
                             {
-                                Questions.Add(new Question((int)dr["QuestionId"], (string)dr["Question"]));
+                                Questions.Add(new Question((int)dr["QuestionId"], (string)dr["Question"], (int)dr["QuestionCategoryId"]));
                             }
                         }
 
@@ -840,7 +840,12 @@ namespace latus
                                 int TempSimpleAnswerId = func.ConvertDBint(dr["SimpleAnswerId"]);
                                 string TempAnswerDesc = func.ConvertDBstring(dr["AnswerDesc"]);
                                 float TempWeight = func.ConvertDBfloat(dr["Weight"]);
-                                newAnswer = new Answer(TempAnswerId, SolutionId, QuestionId, TempSimpleAnswerId, TempAnswerDesc, TempWeight);
+                                float TempScore = func.ConvertDBfloat(dr["Score"]);
+                                int TempKnowledgebase = func.ConvertDBint(dr["KnowledgeBaseBooleanId"]);
+                                Boolean TempBool = false;
+                                if (TempKnowledgebase == 1)
+                                    TempBool = true;
+                                newAnswer = new Answer(TempAnswerId, SolutionId, QuestionId, TempSimpleAnswerId, TempAnswerDesc, TempWeight, TempScore, TempBool);
                             }
                         }
 
@@ -908,7 +913,45 @@ namespace latus
                 }
             }
         }
-        //Returns in a list of lists where returnedAnswer[i][j] corresponds with i = Solution, j = QuestionId
-        //Needs Reworking
+
+        public static Dictionary<int, string> getQuestionCategories(out string error)
+        {
+            error = "";
+            Dictionary<int, string> QuestionCategories = new Dictionary<int, string>();
+
+            using (SqlConnection conn = new SqlConnection(ds.latusdb))
+            {
+                using (SqlCommand cmd = conn.CreateCommand())
+                {
+                    try
+                    {
+                        cmd.CommandText = "SELECT * FROM QuestionCategory";
+                        cmd.CommandType = CommandType.Text;
+                        conn.Open();
+
+                        using (SqlDataReader dr = cmd.ExecuteReader())
+                        {
+                            while (dr.Read())
+                            {
+                                int QuestionCategoryId = func.ConvertDBint(dr["QuestionCategoryId"]);
+                                string QuestionCategory = func.ConvertDBstring(dr["QuestionCategory"]);
+
+                                QuestionCategories.Add(QuestionCategoryId, QuestionCategory);
+                            }
+                        }
+
+                        conn.Close();
+
+                        return QuestionCategories;
+                    }
+                    catch (Exception Ex)
+                    {
+                        error = Ex.ToString();
+                        return QuestionCategories;
+                    }
+
+                }
+            }
+        }
     }
 }
